@@ -1,0 +1,19 @@
+//
+// Alerts
+// --------------------------------------------------
+
+
+// Base styles
+// -------------------------
+
+.alert {
+  > p + p {
+    margin-top: 8px;
+  }
+}
+
+// Blank slate
+.alert-blank {
+  .alert-variant(@well-bg; @well-bg; @text-muted);
+  padding: 24px 32px;
+}

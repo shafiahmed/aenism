@@ -1,0 +1,13 @@
+//
+// Navs
+// --------------------------------------------------
+
+// Create a small version and match it to btn-sm but base font-size
+.nav-sm {
+  > li {
+    > a {
+      border: 1px solid transparent;
+      .button-size(@padding-small-vertical; @padding-small-horizontal; @font-size-base; @line-height-large; @border-radius-small);
+    }
+  }
+}

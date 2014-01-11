@@ -1,0 +1,102 @@
+//
+// Media
+// --------------------------------------------------
+
+.media-heading {
+  margin: 0 0 8px;
+  a {
+    color: @text-color;
+    &:hover {
+      color: @link-hover-color;
+    }
+  }
+}
+
+// More clearance
+.media {
+  > .media-image {
+    float: left;
+    margin-left: 0;
+    margin-right: 16px;
+  }
+}
+
+// Separated list items
+.media-list {
+  .media {
+    border-bottom: 1px solid @hr-border;
+    margin: 0;
+    padding-bottom: 23px;
+    padding-top: 24px;
+  }
+}
+
+
+// Quanta
+.media-quanta {
+  text-align: right;
+  .media-quanta-label {
+    color: @gray-light;
+    display: block;
+  }
+  .media-quanta-value {
+    font-size: @font-size-h3;
+    line-height: 1;
+  }
+}
+
+@media (max-width: @screen-xs-max) {
+  .media-body {
+    overflow: visible;
+  }
+  .media > .media-image {
+    float: right;
+    margin-left: 16px;
+    margin-right: 0;
+    img {
+      height: 64px;
+      width: 64px;
+    }
+  }
+  .media-quanta {
+    float: left;
+    margin-top: 16px;
+    text-align: left;
+  }
+}
+
+.media-action {
+  margin-top: 32px;
+  text-align: right;
+}
+
+@media (max-width: @screen-xs-max) {
+  .media-action {
+    float: right;
+    margin-top: 16px;
+    text-align: left;
+  }
+}
+
+.media {
+  .text-muted {
+    margin-top: 10px;
+  }
+  .progress {
+    margin-bottom: 0;
+    margin-top: 8px;
+  }
+}
+
+@media (max-width: @screen-xs-max) {
+  .media {
+    .text-muted {
+      margin-top: 0;
+    }
+    .progress {
+      margin-bottom: 0;
+      margin-top: 8px;
+    }
+  }
+}
+

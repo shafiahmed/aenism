@@ -1,0 +1,40 @@
+//
+// Mixins
+// --------------------------------------------------
+
+// Form control focus state
+.form-control-focus(@color: @input-border-focus) {
+  &:focus {
+    border-color: @color;
+    outline: 0;
+  }
+}
+
+
+// Dividers in dropdowns, etc
+.nav-divider(@color: #e5e5e5) {
+  height: 1px;
+  margin: ((@line-height-computed * 0.4) - 1) 0;
+  overflow: hidden;
+  background-color: @color;
+}
+
+
+// Responsive utilities
+// -------------------------
+// Support for inline elements
+.responsive-inline-visibility() {
+  display: inline !important;
+  tr& { display: table-row !important; }
+  th&,
+  td& { display: table-cell !important; }
+}
+
+
+// Non Boostrap mixins
+
+.browser-appearance(@appearance) {
+  -webkit-appearance: @appearance;
+  -moz-appearance:    @appearance;
+  appearance:         @appearance;
+}

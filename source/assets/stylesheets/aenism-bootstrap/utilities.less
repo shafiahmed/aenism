@@ -1,0 +1,15 @@
+//
+// Utility classes
+// --------------------------------------------------
+
+// Percentage width helper classes (w-1p to w100p where p = %)
+@divisions: 100;
+.width-divisions (@index) when (@index > 0) {
+	.w-@{index}p {
+		// your resulting css
+		width: percentage(@index *0.01) !important;
+	}
+	.width-divisions(@index - 1);
+}
+.width-divisions (0) {}
+.width-divisions (@divisions);
