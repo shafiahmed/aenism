@@ -21,3 +21,6 @@ gem 'less'
 # Syntx highlighting
 gem 'rack-codehighlighter', :git => 'git://github.com/wbzyl/rack-codehighlighter.git'
 gem 'pygments.rb'
+
+# Used for publishing to Github Pages
+gem 'middleman-gh-pages'
