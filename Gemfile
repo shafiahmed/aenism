@@ -23,4 +23,4 @@ gem 'rack-codehighlighter', :git => 'git://github.com/wbzyl/rack-codehighlighter
 gem 'pygments.rb'
 
 # Used for publishing to Github Pages
-gem 'middleman-gh-pages'
+gem 'middleman-deploy'
