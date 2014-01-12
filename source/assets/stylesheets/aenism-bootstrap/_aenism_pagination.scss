@@ -1,0 +1,15 @@
+//
+// Pagination
+// --------------------------------------------------
+
+// Decrease gap between table and its pagination
+.table ~ .pagination,
+.table-responsive ~ .pagination {
+  margin: 0 0 $line-height-computed;
+}
+
+.table ~ .page-index,
+.table-responsive ~ .page-index {
+  color: $text-muted;
+  margin: 0 0 $line-height-computed;
+}

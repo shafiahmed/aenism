@@ -8,7 +8,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <title><%= current_article.title + ' &ndash; ' unless current_article.nil? %>Aenism</title>
     <%= feed_tag :atom, "#{blog.options.prefix.to_s}/feed.xml", title: "Atom Feed" %>
-    <%= stylesheet_link_tag "aenism-bootstrap/bootstrap", {:rel=>"stylesheet"} %>
+    <%= stylesheet_link_tag "aenism-bootstrap/application", {:rel=>"stylesheet"} %>
   </head>
   <body>
     

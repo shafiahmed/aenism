@@ -15,8 +15,9 @@ gem 'oj'
 # Minify HTML
 gem "middleman-minify-html"
 
-# Use Less for Bootstrap
-gem 'less'
+# Use Sass + Bootstrap
+gem 'sass'
+gem 'bootstrap-sass', :require => false
 
 # Syntx highlighting
 gem 'rack-codehighlighter', :git => 'git://github.com/wbzyl/rack-codehighlighter.git'
