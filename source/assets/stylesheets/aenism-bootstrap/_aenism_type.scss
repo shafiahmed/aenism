@@ -24,23 +24,6 @@ strong, b {
   font-weight: $headings-font-weight;
 }
 
-// Gender colors
-small[class^="text-gender-"] {
-  font-weight: 600;
-}
-.text-gender-male {
-  color: $brand-gender-male;
-  &:hover {
-    color: darken($brand-gender-male, 10%);
-  }
-}
-.text-gender-female {
-  color: $brand-gender-female;
-  &:hover {
-    color: darken($brand-gender-female, 10%);
-  }
-}
-
 // Description Lists
 dl {
   margin-bottom: $line-height-computed;

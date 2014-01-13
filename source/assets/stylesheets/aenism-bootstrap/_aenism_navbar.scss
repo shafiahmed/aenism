@@ -2,20 +2,18 @@
 // Navbar
 // --------------------------------------------------
 
-.navbar-static-top {
-  border-width: 0;
-}
-
 .navbar-default {
   .navbar-brand {
-    @include text-hide();
-    background: url('../img/LifeOpp_logo.png') no-repeat 16px 16px;
-  	background-size: 112px 32px;
-  	height: 64px;
-    padding: 16px;
-  	width: 144px;
+  	height: 48px;
+    letter-spacing: 0.24em;
+    padding: 8px 16px;
+    text-transform: uppercase;
+  	width: 192px;
   }
   .navbar-nav {
+    font-size: $font-size-extra-tiny;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
     > .active > a {
       &,
       &:hover,

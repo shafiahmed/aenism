@@ -6,37 +6,38 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title><%= current_article.title + ' &ndash; ' unless current_article.nil? %>Aenism</title>
+    <title><%= current_article.title + ' &ndash; ' unless current_article.nil? %><%= data.settings.name %></title>
     <%= feed_tag :atom, "#{blog.options.prefix.to_s}/feed.xml", title: "Atom Feed" %>
     <%= stylesheet_link_tag "aenism-bootstrap/application", {:rel=>"stylesheet"} %>
+    <%= partial "webfonts" %>
   </head>
   <body>
     
-    <div id="main" role="main">
+    <div class="wrapper">
+    
+      <%= partial "header" %>
+    
       <%= yield %>
+    
     </div>
     
-    <aside>
-      <h2>Recent Articles</h2>
-      <ol>
-        <% blog.articles[0...10].each do |article| %>
-          <li><%= link_to article.title, article %> <span><%= article.date.strftime('%b %e') %></span></li>
-        <% end %>
-      </ol>
+    <footer id="footer">
+      <div class="container">
+        <p class="text-muted">Place sticky footer content here.</p>
+      </div>
+    </footer>
+      
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+    <%= javascript_include_tag  "application" %>
+    <script>
+      (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+      function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+      e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+      e.src='//www.google-analytics.com/analytics.js';
+      r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+      ga('create','UA-21041420-6');ga('send','pageview');
+    </script>
 
-      <h2>Tags</h2>
-      <ol>
-        <% blog.tags.each do |tag, articles| %>
-          <li><%= link_to tag, tag_path(tag) %> (<%= articles.size %>)</a></li>
-        <% end %>
-      </ol>
-
-      <h2>By Year</h2>
-      <ol>
-        <% blog.articles.group_by {|a| a.date.year }.each do |year, articles| %>
-          <li><%= link_to year, blog_year_path(year) %> (<%= articles.size %>)</a></li>
-        <% end %>
-      </ol>
-    </aside>
   </body>
 </html>

@@ -51,9 +51,43 @@ html {
   height: 100%;
 }
 
-body {
-  padding-top: 64px;
+// Custom Navbar
+.navbar-wrapper {
+  left: 0;
+  margin-top: 16px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 20;
 }
+
+// Flip around the padding for proper display in narrow viewports
+.navbar-wrapper .container {
+  padding-left: 0;
+  padding-right: 0;
+}
+.navbar-wrapper .navbar {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+// Clear the jumbotron from the navbar
+.jumbotron {
+  border-bottom: 1px solid $hr-border;
+  margin-bottom: $line-height-computed;
+  padding: 0;
+  padding-top: 48px;
+  .lead {
+    margin-top: 16%;
+  }
+}
+
+@media (max-width: $screen-xs-max) {
+  .jumbotron {
+    margin: 0;
+  }
+}
+
 
 // For sticky footer
 #wrapper {
