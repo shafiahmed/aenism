@@ -1,0 +1,9 @@
+name:             Aenism
+description:      Aen's blog
+keywords:         design, creativity, craft, consideration, consciousness
+author:           Aen
+license:          WTFPL
+
+webfonts:
+  service_type:   typekit
+  service_id:     obh1fkn
