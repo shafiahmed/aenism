@@ -14,11 +14,13 @@
     <link rel="alternate" href="http://blog.url.com/general/example-article/"/>
     <id>http://blog.url.com/general/example-article/</id>
     <published>2012-01-01T00:00:00Z</published>
-    <updated>2014-01-12T09:43:28+08:00</updated>
+    <updated>2014-01-13T14:09:11+08:00</updated>
     <author>
       <name>Article Author</name>
     </author>
-    <content type="html">&lt;p&gt;This is an example article. You probably want to delete it and write your own articles!&lt;/p&gt;
+    <content type="html">&lt;p&gt;Middleman is a command-line tool for creating static websites using all the shortcuts and tools of the modern web development environment.&lt;/p&gt;
+
+&lt;p&gt;Middleman assumes familiarity with the command-line. The Ruby language and the Sinatra web framework form the base of the tool. Familiarity with both will go a long way in helping users understand why Middleman works the way it does.&lt;/p&gt;
 </content>
   </entry>
 </feed>
