@@ -76,15 +76,17 @@ html {
   border-bottom: 1px solid $hr-border;
   margin-bottom: $line-height-computed;
   padding: 0;
-  padding-top: 48px;
-  .lead {
-    margin-top: 16%;
+  padding-top: 16%;
+  figure {
+    margin-top: -16%;
+    padding-top: 32px;
   }
 }
 
 @media (max-width: $screen-xs-max) {
   .jumbotron {
     margin: 0;
+    padding-top: 96px;
   }
 }
 
