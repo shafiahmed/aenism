@@ -31,3 +31,5 @@ gem "middleman-imageoptim", "~> 0.1.3"
 # Used for publishing to Github Pages
 gem 'middleman-deploy'
 
+# For formatting data
+gem "twitter_cldr"

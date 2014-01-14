@@ -1,6 +1,6 @@
 ---
-title: Example Article
-date: 2012-01-01
+title: Another article
+date: 2014-01-11
 category: general
 tags: example
 ---

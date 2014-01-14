@@ -1,3 +1,19 @@
+require 'twitter_cldr'
+
+class Formatters < Middleman::Extension
+  def initialize(app, options_hash={}, &block)
+    super
+  end
+
+  helpers do
+    def datetime_ago(datetime)
+      datetime.localize.ago.to_s
+    end
+  end
+end
+
+::Middleman::Extensions.register(:formatters, Formatters)
+
 ###
 # Blog settings
 ###
@@ -80,6 +96,8 @@ end
 
 # Reload the browser automatically whenever files change
 activate :livereload
+
+activate :formatters
 
 # Methods defined in the helpers block are available in templates
 # helpers do
