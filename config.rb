@@ -32,9 +32,6 @@ end
 
 page "/feed.xml", layout: false
 
-# Pretty URLs
-activate :directory_indexes
-
 activate :deploy do |deploy|
   deploy.method = :git
   # Optional Settings
@@ -82,7 +79,7 @@ end
 # activate :automatic_image_sizes
 
 # Reload the browser automatically whenever files change
-# activate :livereload
+activate :livereload
 
 # Methods defined in the helpers block are available in templates
 # helpers do
@@ -94,6 +91,7 @@ end
 set :css_dir, 'assets/stylesheets'
 set :js_dir, 'assets/javascripts'
 set :images_dir, 'assets/images'
+set :fonts_dir, 'assets/fonts'
 
 set :layouts_dir, 'layouts'
 set :partials_dir, 'shared'
@@ -122,12 +120,10 @@ configure :build do
   
   # Gzip for faster site
   activate :gzip
+  
+  # Pretty URLs
+  activate :directory_indexes
+  
+  activate :imageoptim
+  activate :syntax, :line_numbers => true
 end
-
-require 'rack/codehighlighter'
-require "pygments"
-use Rack::Codehighlighter,
-  :pygments,
-  :element => "pre>code",
-  :pattern => /\A:::([-_+\w]+)\s*\n/,
-  :markdown => true

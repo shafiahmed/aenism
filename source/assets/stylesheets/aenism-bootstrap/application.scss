@@ -54,11 +54,17 @@ html {
 // Custom Navbar
 .navbar-wrapper {
   left: 0;
-  margin-top: 16px;
+  margin-top: 24px;
   position: absolute;
   right: 0;
   top: 0;
   z-index: 20;
+}
+
+@media (max-width: $screen-xs-max) {
+  .navbar-wrapper {
+    margin-top: 16px;
+  }
 }
 
 // Flip around the padding for proper display in narrow viewports
@@ -76,15 +82,17 @@ html {
   border-bottom: 1px solid $hr-border;
   margin-bottom: $line-height-computed;
   padding: 0;
-  padding-top: 48px;
-  .lead {
-    margin-top: 16%;
+  padding-top: 16%;
+  figure {
+    margin-top: -16%;
+    padding-top: 32px;
   }
 }
 
 @media (max-width: $screen-xs-max) {
   .jumbotron {
     margin: 0;
+    padding-top: 96px;
   }
 }
 

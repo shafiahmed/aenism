@@ -20,8 +20,14 @@ gem 'sass'
 gem 'bootstrap-sass', :require => false
 
 # Syntx highlighting
-gem 'rack-codehighlighter', :git => 'git://github.com/wbzyl/rack-codehighlighter.git'
-gem 'pygments.rb'
+gem "middleman-syntax"
+
+# Livereload
+gem "middleman-livereload", "~> 3.1.0"
+
+# Imageoptim
+gem "middleman-imageoptim", "~> 0.1.3"
 
 # Used for publishing to Github Pages
 gem 'middleman-deploy'
+
