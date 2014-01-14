@@ -54,11 +54,17 @@ html {
 // Custom Navbar
 .navbar-wrapper {
   left: 0;
-  margin-top: 16px;
+  margin-top: 24px;
   position: absolute;
   right: 0;
   top: 0;
   z-index: 20;
+}
+
+@media (max-width: $screen-xs-max) {
+  .navbar-wrapper {
+    margin-top: 16px;
+  }
 }
 
 // Flip around the padding for proper display in narrow viewports

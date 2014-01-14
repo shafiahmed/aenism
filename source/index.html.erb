@@ -10,7 +10,7 @@ per_page: 10
       </figure>
       <div class="col-md-6 col-sm-6 col-xs-12">
         <p>I&rsquo;m Aen, a designer. I study craft, consideration and consciousness.</p>
-        <p>Scroll down for my insights or <a href="#"><small>README</small></a> to know more.</p>
+        <p>Scroll down for my latest insights. <a href="#"><small>README</small></a> to know more.</p>
       </div>
     </div>
   </div>
@@ -29,13 +29,13 @@ per_page: 10
 
     <% page_articles.each_with_index do |article, i| %>
       <article class="row">
-        <div class="col-sm-8">
+        <div class="col-sm-9">
           <h2><%= link_to article.title, article %></h2>
           <!-- use article.summary(250) if you have Nokogiri available to show just
                the first 250 characters -->
           <%= article.body %>
         </div>
-        <aside class="col-sm-3 col-sm-offset-1">
+        <aside class="col-sm-2 col-sm-offset-1">
           <small><%= article.date.strftime('%b %e') %></small>
         </aside>
       </article>
@@ -48,7 +48,7 @@ per_page: 10
     <% end %>
   </section>
 
-  <aside>
+  <!-- <aside>
     <h3>Recent Articles</h3>
     <ol>
       <% blog.articles[0...10].each do |article| %>
@@ -61,7 +61,7 @@ per_page: 10
         <li><%= link_to tag, tag_path(tag) %> (<%= articles.size %>)</a></li>
       <% end %>
     </ol>
-  </aside>
+  </aside> -->
 
 </div>
 

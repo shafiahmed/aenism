@@ -32,9 +32,6 @@ end
 
 page "/feed.xml", layout: false
 
-# Pretty URLs
-activate :directory_indexes
-
 activate :deploy do |deploy|
   deploy.method = :git
   # Optional Settings
@@ -43,8 +40,6 @@ activate :deploy do |deploy|
   # deploy.strategy = :submodule      # commit strategy: can be :force_push or :submodule, default: :force_push
   deploy.build_before = true # default: false
 end
-
-activate :imageoptim
 
 ###
 # Compass
@@ -96,6 +91,7 @@ activate :livereload
 set :css_dir, 'assets/stylesheets'
 set :js_dir, 'assets/javascripts'
 set :images_dir, 'assets/images'
+set :fonts_dir, 'assets/fonts'
 
 set :layouts_dir, 'layouts'
 set :partials_dir, 'shared'
@@ -124,12 +120,10 @@ configure :build do
   
   # Gzip for faster site
   activate :gzip
+  
+  # Pretty URLs
+  activate :directory_indexes
+  
+  activate :imageoptim
+  activate :syntax, :line_numbers => true
 end
-
-require 'rack/codehighlighter'
-require "pygments"
-use Rack::Codehighlighter,
-  :pygments,
-  :element => "pre>code",
-  :pattern => /\A:::([-_+\w]+)\s*\n/,
-  :markdown => true
