@@ -83,7 +83,6 @@ html {
 
 // Clear the jumbotron from the navbar
 .jumbotron {
-  border-bottom: 1px solid $hr-border;
   height: 560px;
   margin-bottom: $line-height-computed;
   padding: 0;
@@ -120,6 +119,23 @@ html {
   }
 }
 
+
+// Webfonts FOUT
+// --------------------------------------------------
+
+article.post,
+.navbar-brand {
+  visibility: hidden;
+}
+
+.wf-active {
+  article.post,
+  .navbar-brand {
+    visibility: visible;
+  }
+}
+
+
 // Sections
 // --------------------------------------------------
 
@@ -138,6 +154,27 @@ section[role="main"] {
   > header [class^="col-"] {
     margin-bottom: floor($grid-gutter-width / 2);
   }
+  .article & {
+    margin-top: 160px;
+  }
+}
+
+
+// Bokeh
+// --------------------------------------------------
+
+#bokehs {
+  height: 560px;
+  overflow: hidden;
+}
+
+.bokeh {
+	position: absolute;
+	z-index: 0;
+}
+
+#bokeh-box > .bokeh {
+	display: none;
 }
 
 
@@ -146,4 +183,8 @@ section[role="main"] {
 
 article.post {
   margin-bottom: $line-height-computed;
+  h2 a {
+    color: $brand-logotype;
+  }
 }
+

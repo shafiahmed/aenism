@@ -4,6 +4,8 @@
 
 .navbar-default {
   .navbar-brand {
+    font-family: $headings-font-family;
+    font-weight: $headings-font-weight;
   	height: 48px;
     letter-spacing: 0.08em;
     padding: 8px 16px;

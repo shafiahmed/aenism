@@ -43,7 +43,7 @@ $brand-gender-female:   #f5a6c0;
 
 $body-bg:               #fff;
 $text-color:            $gray-dark;
-$text-font-weight:      300;
+$text-font-weight:      200;
 
 // Other custom colors
 // -------------------------
@@ -63,9 +63,9 @@ $link-hover-color:      darken($link-color, 12%);
 
 $font-family-brand:       "proxima-nova-soft", sans-serif;
 $font-family-sans-serif:  "proxima-nova-soft", sans-serif;
-$font-family-serif:       Georgia, "Times New Roman", Times, serif;
+$font-family-serif:       "chaparral-pro", Georgia, "Times New Roman", Times, serif;
 $font-family-monospace:   Menlo, Monaco, Consolas, "Courier New", monospace;
-$font-family-base:        $font-family-sans-serif;
+$font-family-base:        $font-family-serif;
 
 $font-size-base:          22px;
 $font-size-large:         ceil($font-size-base * 1.091);  // ~24px
@@ -84,8 +84,8 @@ $font-size-h6:            ceil($font-size-base * 0.91);   // ~20px
 $line-height-base:        1.455; // 32/22
 $line-height-computed:    floor($font-size-base * $line-height-base); // ~32px
 
-$headings-font-family:    $font-family-base;
-$headings-font-weight:    400;
+$headings-font-family:    $font-family-sans-serif;
+$headings-font-weight:    600;
 $headings-line-height:    1;
 $headings-color:          inherit;
 
@@ -292,7 +292,7 @@ $grid-float-breakpoint:     $screen-tablet;
 $navbar-height:                    48px;
 $navbar-margin-bottom:             $line-height-computed;
 $navbar-default-color:             $text-color;
-$navbar-default-bg:                $body-bg;
+$navbar-default-bg:                transparent;
 $navbar-default-border:            transparent;
 $navbar-border-radius:             $border-radius-base;
 $navbar-padding-horizontal:        floor($grid-gutter-width / 2);

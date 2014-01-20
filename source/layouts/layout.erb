@@ -11,21 +11,35 @@
     <%= stylesheet_link_tag "aenism-bootstrap/application", {:rel=>"stylesheet"} %>
     <%= partial "webfonts" %>
   </head>
-  <body>
+  <body class="<%= page_classes %> <%= ' article' if is_blog_article? %>">
     
     <div class="wrapper">
     
       <%= partial "header" %>
+      
+      <div class="container">
+
+        <section id="main" role="main">
     
-      <%= yield %>
+          <% if is_blog_article? %>
+            <article class="post">
+              <h2><%= current_article.title %></h2>
+              <%= yield %>
+              <footer>
+                <%= datetime_ago(current_article.date) %>
+              </footer>
+            </article>
+          <% else %>
+            <%= yield %>
+          <% end %>
+      
+        </section>
+        
+      </div>
     
     </div>
     
-    <footer id="footer">
-      <div class="container">
-        <p class="text-muted">Place sticky footer content here.</p>
-      </div>
-    </footer>
+    <%= partial "footer" %>
       
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
