@@ -2,14 +2,18 @@
 # The humans responsible & technology colophon
 
 # TEAM
-
-    <name> -- <role> -- <twitter>
+  Author, designer, developer: Aen
+  Contact: hello@aentan.com
+  Twitter: @Aen
+  From: Singapore
 
 # THANKS
+  Wife: Frjin
+  Son: Nuon
 
-    <name>
-
-# TECHNOLOGY COLOPHON
-
-    HTML5, CSS3
-    jQuery, Modernizr
+# SITE
+  Standards: HTML5, CSS3
+  Libraries: jQuery, GSAP, Bootstrap
+  Generator: Middleman
+  Deploy: Github Pages
+  Editor: Textmate
