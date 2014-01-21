@@ -23,11 +23,8 @@
     
           <% if is_blog_article? %>
             <article class="post">
-              <h2><%= current_article.title %></h2>
+              <h1><%= current_article.title %></h1>
               <%= yield %>
-              <footer>
-                <p class="small text-muted">Written <%= datetime_ago(current_article.date) %></p>
-              </footer>
             </article>
           <% else %>
             <%= yield %>

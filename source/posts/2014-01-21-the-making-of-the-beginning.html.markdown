@@ -1,7 +1,6 @@
 ---
-title: Prologue
-date: 2014-01-21 03:59 UTC
-category: general
+title: The Making of the Beginning
+date: 2014-01-21 17:07 UTC
 tags: aenism
 ---
 
@@ -27,6 +26,6 @@ Besides jQuery which is pretty much a standard for interactivity on most sites, 
 
 Though I didn't continue using Pure I liked its simple content-centric design. Blogs are not marketing websites. The content should take center stage. Typography and whitespace are the chief elements of a good blog design. [*Medium*](https://medium.com) and [*ALA*](http://alistapart.com) embody this functional aesthetic well.
 
-The typefaces used are *Brandon Grotesque* for headings and *Chaparral Pro* for body text, from [Typekit](https://typekit.com). I find Brandon a softer, more down-to-earth Futura and Chaparral has a smart character.
+The typefaces used are *Brandon Grotesque* for headings and *Freight Text Pro* for body text, from [Typekit](https://typekit.com). I find Brandon a softer, more down-to-earth Futura and Freight is a nerdy serif.
 
 The animated masthead at the top of the homepage represents my consciousness. It's some of the things that have inspired me and defined me – books, films, music, favorite things, brands, possessions. They'd give you a good idea of the person I am. I created a script called *Bokeh* and it uses GSAP for hardware-accelerated animation.

@@ -5,25 +5,25 @@
  */
 
 // Custom variables first
-@import "aenism_variables";
+@import "variables";
 
 // Then Bootstrap
 @import "bootstrap";
 
 // Core mixins
-@import "aenism_mixins";
+@import "mixins";
 // 
 // // Core CSS
-@import "aenism_scaffolding";
-@import "aenism_type";
-@import "aenism_buttons";
+@import "scaffolding";
+@import "type";
+@import "buttons";
 // 
 // // Components
-@import "aenism_navbar";
-@import "aenism_pagination";
+@import "navbar";
+@import "pagination";
 // 
 // // Utility classes
-@import "aenism_utilities";
+@import "utilities";
 
 
 //
@@ -118,7 +118,7 @@ section[role="main"] {
   }
   .article &,
   .README & {
-    margin-top: 160px;
+    margin-top: 96px;
   }
 }
 
