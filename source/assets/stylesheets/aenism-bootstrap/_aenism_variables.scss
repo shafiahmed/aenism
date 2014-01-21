@@ -61,8 +61,8 @@ $link-hover-color:      darken($link-color, 12%);
 // Typography
 // -------------------------
 
-$font-family-brand:       "proxima-nova-soft", sans-serif;
-$font-family-sans-serif:  "proxima-nova-soft", sans-serif;
+$font-family-brand:       "brandon-grotesque", sans-serif;
+$font-family-sans-serif:  "brandon-grotesque", sans-serif;
 $font-family-serif:       "chaparral-pro", Georgia, "Times New Roman", Times, serif;
 $font-family-monospace:   Menlo, Monaco, Consolas, "Courier New", monospace;
 $font-family-base:        $font-family-serif;
@@ -85,9 +85,11 @@ $line-height-base:        1.455; // 32/22
 $line-height-computed:    floor($font-size-base * $line-height-base); // ~32px
 
 $headings-font-family:    $font-family-sans-serif;
-$headings-font-weight:    600;
+$headings-font-weight:    500;
 $headings-line-height:    1;
 $headings-color:          inherit;
+
+$brand-font-weight:       700;
 
 // Iconography
 // -------------------------

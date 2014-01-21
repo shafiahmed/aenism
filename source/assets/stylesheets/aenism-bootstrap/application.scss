@@ -52,7 +52,7 @@ html {
 }
 
 .container {
-  max-width: 816px;
+  max-width: 768px;
 }
 
 // Custom Navbar
@@ -83,7 +83,7 @@ html {
 
 // Clear the jumbotron from the navbar
 .jumbotron {
-  height: 560px;
+  height: 480px;
   margin-bottom: $line-height-computed;
   padding: 0;
   position: relative;
@@ -157,6 +157,14 @@ section[role="main"] {
   .article & {
     margin-top: 160px;
   }
+}
+
+
+// Me
+// --------------------------------------------------
+
+#me {
+  margin-bottom: 48px;
 }
 
 

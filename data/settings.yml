@@ -7,3 +7,5 @@ license:          WTFPL
 webfonts:
   service_type:   typekit
   service_id:     obh1fkn
+  # service_type:   fontdeck
+  # service_id:     41684

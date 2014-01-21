@@ -1,4 +1,9 @@
 <script>
+  var html = document.getElementsByTagName('html')[0];
+  html.className += '  wf-loading';
+  setTimeout(function() {
+    html.className = html.className.replace(' wf-loading', 'wf-active');
+  }, 5000);
   WebFontConfig = {
     <%= data.settings.webfonts.service_type %>: { id: '<%= data.settings.webfonts.service_id %>' }
   };
