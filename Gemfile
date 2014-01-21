@@ -33,3 +33,6 @@ gem 'middleman-deploy'
 
 # For formatting data
 gem "twitter_cldr"
+
+# For HTML parsing
+gem "nokogiri"

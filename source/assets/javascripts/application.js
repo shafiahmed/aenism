@@ -30,13 +30,13 @@ function isCollide(a, b, clear) {
   $.fn.randomPositionWithoutCollision = function(options) {
 		$bokehs = $('#bokehs');
     var settings = $.extend({
-      startOffsetX    : 0
+      startOffsetX: 0
     }, options);
   	return this.each(function() {
 			$bokeh = $(this);
   		$bokeh.css({
 				'left': randFromTo(0 - $bokeh.width()/2, $bokehs.width() - $bokeh.width()/2) - settings.startOffsetX,
-				'top': randFromTo(0 - $bokeh.height()/2, $bokehs.height() - $bokeh.height() * 1.5)
+				'top': randFromTo(0 - $bokeh.height()/2, $bokehs.height() - $bokeh.height())
 			});
 			$bokeh.siblings().not('.bokeh').each(function() {
 				$sibling = $(this);
@@ -80,7 +80,7 @@ $(function() {
   	var $bokeh = $('#bokeh-box > .bokeh').eq(randFromTo(0, $('#bokeh-box > .bokeh').length)).clone();
 
   	$bokeh.appendTo('#bokehs').randomPositionWithoutCollision({
-  	  'startOffsetX': randomDist
+  	  'startOffsetX': randomDist/2
   	}).css({
       'opacity': 0
   	});

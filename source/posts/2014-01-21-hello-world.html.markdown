@@ -1,11 +1,11 @@
 ---
-title: Hello World
+title: Prologue
 date: 2014-01-21 03:59 UTC
 category: general
 tags: aenism
 ---
 
-It's still January, not too late to add having a new blog to my resolutions. My last good blog *aentan.com* lasted two point five years and was decently successful. I had a couple of [Hacker News front page articles](https://www.hnsearch.com/search#request/all&q=aentan.com&sortby=points+desc), a repost on [Lifehacker](http://lifehacker.com/5899592/overthinking-and-your-child+like-mind) and various job opportunities. Problem was… maintaining a WordPress site in a shared hosting environment became too much of a chore and I let it slip. Dreamhost was a hundred bucks a year. Didn't make sense anymore.
+It's still January, not too late to add having a new blog to my resolutions. My last decently successful blog *aentan.com* lasted just under three years. I had a couple of [Hacker News front page articles](https://www.hnsearch.com/search#request/all&q=aentan.com&sortby=points+desc), a repost on [Lifehacker](http://lifehacker.com/5899592/overthinking-and-your-child+like-mind) and various job opportunities. Problem was… maintaining a WordPress site in a shared hosting environment became too much of a chore. Dreamhost was a hundred bucks a year. Didn't make sense anymore.
 
 I tried to develop my own blog engine [*Pure*](http://writeonpure.com) and wrote a couple of articles on it. It was an ambitious project in which articles are visually composed like Keynote or Powerpoint slides. It's a Javascript monster. I spent a year developing it with my free time but it didn't stick with me. I have to use a browser to write and I couldn't do it offline. Still feels like a lot of work.
 

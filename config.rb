@@ -14,6 +14,27 @@ end
 
 ::Middleman::Extensions.register(:formatters, Formatters)
 
+# class Referencer < Middleman::Extension
+#   require 'nokogiri'
+#   require 'open-uri'
+#   def initialize(app, options_hash={}, &block)
+#     super
+#   end
+# 
+#   helpers do
+#     def make_references(content)
+#       Nokogiri::HTML(content).css("a").map do |link|
+#         if (href = link.attr("href")) && href.match(/^https?:/)
+#           href
+#           # TODO add magic here
+#         end
+#       end.compact
+#     end
+#   end
+# end
+# 
+# ::Middleman::Extensions.register(:referencer, Referencer)
+
 ###
 # Blog settings
 ###
@@ -82,8 +103,6 @@ end
 # with_layout :admin do
 #   page "/admin/*"
 # end
-
-page "/index.html", :layout => "home"
 
 # Proxy pages (http://middlemanapp.com/dynamic-pages/)
 # proxy "/this-page-has-no-template.html", "/template-file.html", locals: {

@@ -16,26 +16,11 @@
 // // Core CSS
 @import "aenism_scaffolding";
 @import "aenism_type";
-@import "aenism_tables";
-@import "aenism_forms";
 @import "aenism_buttons";
 // 
 // // Components
-@import "aenism_dropdowns";
-@import "aenism_button-groups";
-@import "aenism_input-groups";
 @import "aenism_navbar";
-@import "aenism_breadcrumbs";
 @import "aenism_pagination";
-@import "aenism_labels";
-@import "aenism_badges";
-@import "aenism_alerts";
-@import "aenism_media";
-@import "aenism_list-group";
-@import "aenism_wells";
-// 
-// // Components w/ JavaScript
-@import "aenism_modals";
 // 
 // // Utility classes
 @import "aenism_utilities";
@@ -58,17 +43,10 @@ html {
 // Custom Navbar
 .navbar-wrapper {
   left: 0;
-  margin-top: 16px;
   position: absolute;
   right: 0;
   top: 0;
   z-index: 20;
-}
-
-@media (max-width: $screen-xs-max) {
-  .navbar-wrapper {
-    margin-top: 16px;
-  }
 }
 
 // Flip around the padding for proper display in narrow viewports
@@ -79,29 +57,6 @@ html {
 .navbar-wrapper .navbar {
   padding-left: 15px;
   padding-right: 15px;
-}
-
-// Clear the jumbotron from the navbar
-.jumbotron {
-  height: 480px;
-  margin-bottom: $line-height-computed;
-  padding: 0;
-  position: relative;
-  figure {
-    bottom: 0;
-    height: 260px;
-    left: 50%;
-    margin: 0 0 0 -110px;
-    position: absolute;
-    width: 240px;
-  }
-}
-
-@media (max-width: $screen-xs-max) {
-  .jumbotron {
-    margin: 0;
-    padding-top: 96px;
-  }
 }
 
 
@@ -130,17 +85,17 @@ html {
 // Webfonts FOUT
 // --------------------------------------------------
 
-article.post,
-.navbar-brand {
-  visibility: hidden;
-}
-
-.wf-active {
-  article.post,
-  .navbar-brand {
-    visibility: visible;
-  }
-}
+//article.post,
+//.navbar-brand {
+//  visibility: hidden;
+//}
+//
+//.wf-active {
+//  article.post,
+//  .navbar-brand {
+//    visibility: visible;
+//  }
+//}
 
 
 // Sections
@@ -161,26 +116,49 @@ section[role="main"] {
   > header [class^="col-"] {
     margin-bottom: floor($grid-gutter-width / 2);
   }
-  .article & {
+  .article &,
+  .README & {
     margin-top: 160px;
   }
-}
-
-
-// Me
-// --------------------------------------------------
-
-#me {
-  margin-bottom: 64px;
 }
 
 
 // Bokeh
 // --------------------------------------------------
 
+// Clear the jumbotron from the navbar
+.jumbotron {
+  height: 480px;
+  margin-bottom: $line-height-computed;
+  padding: 0;
+  position: relative;
+  figure {
+    bottom: 0;
+    height: 260px;
+    left: 50%;
+    margin: 0 0 0 -110px;
+    position: absolute;
+    width: 240px;
+  }
+}
+
+@media (max-width: $screen-xs-max) {
+  .jumbotron {
+    height: 400px;
+    margin: 0;
+  }
+}
+
 #bokehs {
-  height: 560px;
+  height: 480px;
   overflow: hidden;
+  position: relative;
+}
+
+@media (max-width: $screen-xs-max) {
+  #bokehs {
+    height: 400px;
+  }
 }
 
 .bokeh {
@@ -198,8 +176,10 @@ section[role="main"] {
 
 article.post {
   margin-bottom: $line-height-computed;
-  h2 a {
-    color: $brand-logotype;
+  h2, h3, h4, h5, h6 {
+    a {
+      color: $brand-logotype;
+    }
   }
 }
 

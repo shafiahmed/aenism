@@ -43,19 +43,12 @@ $brand-gender-female:   #f5a6c0;
 
 $body-bg:               #fff;
 $text-color:            $gray-dark;
-$text-font-weight:      200;
-
-// Other custom colors
-// -------------------------
-
-$today-bg:              #f9f9e2;
-$today-hover-bg:        darken(saturate($today-bg, 12%), 8%);
-$today-border:          darken(desaturate($today-bg, 40%), 20%);
+$text-font-weight:      400;
 
 // Links
 // -------------------------
 
-$link-color:            #2cac79;
+$link-color:            #7685EC;
 $link-hover-color:      darken($link-color, 12%);
 
 // Typography
@@ -63,7 +56,7 @@ $link-hover-color:      darken($link-color, 12%);
 
 $font-family-brand:       "brandon-grotesque", sans-serif;
 $font-family-sans-serif:  "brandon-grotesque", sans-serif;
-$font-family-serif:       "chaparral-pro", Georgia, "Times New Roman", Times, serif;
+$font-family-serif:       "freight-text-pro", Georgia, "Times New Roman", Times, serif;
 $font-family-monospace:   Menlo, Monaco, Consolas, "Courier New", monospace;
 $font-family-base:        $font-family-serif;
 
@@ -85,9 +78,9 @@ $line-height-base:        1.455; // 32/22
 $line-height-computed:    floor($font-size-base * $line-height-base); // ~32px
 
 $headings-font-family:    $font-family-sans-serif;
-$headings-font-weight:    500;
+$headings-font-weight:    700;
 $headings-line-height:    1;
-$headings-color:          inherit;
+$headings-color:          $brand-logotype;
 
 $brand-font-weight:       700;
 
@@ -136,9 +129,6 @@ $table-bg:                           transparent; // overall background-color
 $table-bg-accent:                    #fbfbfb; // for striping
 $table-bg-hover:                     #f6f6f6;
 $table-bg-active:                    $table-bg-hover;
-
-$table-editable-bg:                  $today-bg;
-$table-editable-border:              $today-border;
 
 $table-border-color:                 #ccc; // table and cell border
 $table-border-radius:                $border-radius-base;
@@ -291,7 +281,7 @@ $grid-float-breakpoint:     $screen-tablet;
 // -------------------------
 
 // Basics of a navbar
-$navbar-height:                    48px;
+$navbar-height:                    32px;
 $navbar-margin-bottom:             $line-height-computed;
 $navbar-default-color:             $text-color;
 $navbar-default-bg:                transparent;
@@ -671,7 +661,7 @@ $page-header-border-color:    $gray-lighter;
 // -------------------------
 
 // Hr border color
-$hr-border:                   $gray;
+$hr-border:                   $gray-light;
 
 // Horizontal forms & lists
 $component-offset-horizontal: 176px;
