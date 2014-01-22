@@ -14,12 +14,12 @@ h1 {
 }
 
 // Not too tight
-
+h2,
 h3,
 h4,
 h5,
 h6 {
-  margin: 0 0 $line-height-computed * .25;
+  margin: 0 0 $line-height-computed/2;
 }
 
 p {
@@ -45,6 +45,14 @@ p + h6 {
 // Avoid bold
 strong, b {
   font-weight: $headings-font-weight;
+}
+
+// Blockquotes
+blockquote {
+  border: 0;
+  margin: $line-height-computed/2 $line-height-computed/4;
+  padding: 8px 16px;
+  text-align: center;
 }
 
 // Description Lists

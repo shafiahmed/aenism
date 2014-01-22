@@ -4,9 +4,9 @@ date: 2014-01-21 17:07 UTC
 tags: aenism
 ---
 
-It's still January, not too late to add having a new blog to my resolutions. My last decently successful blog *aentan.com* lasted just under three years. I had a couple of [Hacker News front page articles](https://www.hnsearch.com/search#request/all&q=aentan.com&sortby=points+desc), a repost on [Lifehacker](http://lifehacker.com/5899592/overthinking-and-your-child+like-mind) and various job opportunities. Problem was… maintaining a WordPress site in a shared hosting environment became too much of a chore. Dreamhost was a hundred bucks a year. Didn't make sense anymore.
+It's still January, not too late to add having a new blog to my resolutions. My last decently successful blog *aentan.com* lasted just under three years. I made it to the Hacker News front page [a couple of times](https://www.hnsearch.com/search#request/all&q=aentan.com&sortby=points+desc), reposted an article to [Lifehacker](http://lifehacker.com/5899592/overthinking-and-your-child+like-mind) and landed various job opportunities. Problem was… maintaining a WordPress site in a shared hosting environment is annoying. Dreamhost was a hundred bucks a year. Didn't make sense anymore.
 
-I tried to develop my own blog engine [*Pure*](http://writeonpure.com) and wrote a couple of articles on it. It was an ambitious project in which articles are visually composed like Keynote or Powerpoint slides. It's a Javascript monster. I spent a year developing it with my free time but it didn't stick with me. I have to use a browser to write and I couldn't do it offline. Still feels like a lot of work.
+I tried to develop my own blog engine [*Pure*](http://writeonpure.com) and wrote a couple of articles on it. It was an ambitious project in which articles are visually composed like Keynote or Powerpoint slides. It's a Javascript monster. I spent a year developing it with my free time but it didn't stick with me. I had to rely on a browser to write and I couldn't easily write offline. Still feels like a lot of work.
 
 So here I am with a new setup. It's much better and it's free.
 

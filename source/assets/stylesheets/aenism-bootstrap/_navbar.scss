@@ -11,16 +11,6 @@
     text-transform: uppercase;
   	width: 192px;
   }
-  .navbar-nav {
-    font-size: $font-size-extra-small;
-    > .active > a {
-      &,
-      &:hover,
-      &:focus {
-        font-weight: $headings-font-weight;
-      }
-    }
-  }
 }
 
 // Search field

@@ -101,17 +101,6 @@ html {
 // Sections
 // --------------------------------------------------
 
-.container,
-.container-fluid {
-  // Space between sections
-  > .breadcrumb,
-  > header,
-  > section {
-    margin-bottom: $line-height-computed;
-    margin-top: $line-height-computed;
-  }
-}
-
 section[role="main"] {
   > header [class^="col-"] {
     margin-bottom: floor($grid-gutter-width / 2);
@@ -128,7 +117,7 @@ section[role="main"] {
 
 // Clear the jumbotron from the navbar
 .jumbotron {
-  height: 480px;
+  height: 432px;
   margin-bottom: $line-height-computed;
   padding: 0;
   position: relative;
@@ -144,20 +133,20 @@ section[role="main"] {
 
 @media (max-width: $screen-xs-max) {
   .jumbotron {
-    height: 400px;
+    height: 368px;
     margin: 0;
   }
 }
 
 #bokehs {
-  height: 480px;
+  height: 432px;
   overflow: hidden;
   position: relative;
 }
 
 @media (max-width: $screen-xs-max) {
   #bokehs {
-    height: 400px;
+    height: 368px;
   }
 }
 
@@ -171,6 +160,10 @@ section[role="main"] {
 }
 
 
+#me + hr {
+  margin: $line-height-computed * 1.5 0 $line-height-computed;
+}
+
 // Articles
 // --------------------------------------------------
 
@@ -180,6 +173,9 @@ article.post {
     a {
       color: $brand-logotype;
     }
+  }
+  & + hr {
+    margin: $line-height-computed * 3 0 $line-height-computed;
   }
 }
 
