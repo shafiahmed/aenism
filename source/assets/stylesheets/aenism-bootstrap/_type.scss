@@ -50,9 +50,18 @@ strong, b {
 // Blockquotes
 blockquote {
   border: 0;
-  margin: $line-height-computed/2 $line-height-computed/4;
-  padding: 8px 16px;
+  margin: $line-height-computed/2;
   text-align: center;
+  p {
+    font-size: ($font-size-base * 1.091);
+    font-weight: $text-font-weight;
+    line-height: 1.25;
+  }
+  // Float right with text-align: right
+  &.pull-right {
+    padding-right: 16px;
+    border: 0;
+  }
 }
 
 // Description Lists

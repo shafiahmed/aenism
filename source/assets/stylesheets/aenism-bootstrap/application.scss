@@ -76,8 +76,7 @@ html {
 
 #footer {
   font-size: 18px;
-  margin-top: 32px;
-  padding-bottom: 32px;
+  padding-bottom: 48px;
   text-align: center;
 }
 
@@ -161,7 +160,7 @@ section[role="main"] {
 
 
 #me + hr {
-  margin: $line-height-computed * 1.5 0 $line-height-computed;
+  margin: $line-height-computed * 2 0 $line-height-computed * 2;
 }
 
 // Articles
@@ -175,7 +174,7 @@ article.post {
     }
   }
   & + hr {
-    margin: $line-height-computed * 3 0 $line-height-computed;
+    margin: $line-height-computed * 3 0 $line-height-computed * 2;
   }
 }
 
