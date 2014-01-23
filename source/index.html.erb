@@ -11,15 +11,20 @@ per_page: 10
   <% end %>
 <% end %>
 
-<% page_articles.each_with_index do |article, i| %>
-  <article class="post">
+<section id="articles">
+  <% page_articles.each_with_index do |article, i| %>
+  <article <%= "style=\"background-image:url('#{article.data.image}');\"" if article.data.image %>>
     <h2><%= link_to article.title, article %></h2>
     <!-- use article.summary(250) if you have Nokogiri available to show just
          the first 250 characters -->
-    <%= article.body %>
+    <% if article.data.description %>
+      <footer>
+        <p><%= article.data.description %></p>
+      </footer>
+    <% end %>
   </article>
-  <hr>
-<% end %>
+  <% end %>
+</section>
 
 <% if paginate %>
   <% if next_page %>

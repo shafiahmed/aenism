@@ -1,6 +1,7 @@
 ---
 title: The Creation Formula
 date: 2014-01-22 02:18 UTC
+description: What are the necessary things one need to collect before achieving creativity?
 tags: creation
 ---
 
@@ -8,6 +9,8 @@ What are the necessary things one need to collect before achieving creativity? W
 
 I've been thinking about how we create. If there was a formula for the creative process, what would its parameters be? What should we seek and combine in order to create creativity? Here's a simple equation I've come up with. 
 
-> Creativity = Craft × Consideration × Consciousness
+> x = Craft × Consideration × Consciousness
 
-Whether it's inventing a useful new contraption, developing a clever advertising campaign, writing a bestselling novel or making a blockbuster film, this is the common pattern one would find in how they are done.
+Whether it's inventing a useful new contraption, developing a clever advertising campaign, writing a bestselling novel or making a blockbuster film, this is the pattern most if not every creative endeavor have in common.
+
+Let's assume X as the factor that makes something great. The more X in something have the greater it is. X isn't necessarily mass, in case I've push you into a less-is-more defense. It's the abstract construct on the side of of an equation which other side deals with the more identifiable qualities. 

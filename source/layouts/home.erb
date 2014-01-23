@@ -13,26 +13,15 @@
   </head>
   <body class="<%= page_classes %>">
     
-    <div class="wrapper">
-    
-      <%= partial "header" %>
-      
-      <div class="jumbotron">
-        <div id="bokehs"></div>
-      </div>
-      
-      <div class="container">
-        <section id="me">
-          <p>I’m Aen and I study how craft, consideration and consciousness make us creative. Scroll down for my latest insights. <%= link_to '<small>README</small>'.html_safe, "/README.html" %> to know me.</p>
-        </section>
-        <hr>
-        <section id="main" role="main">
-          <%= yield %>
-        </section>
-    
-      </div>
+    <%= partial "header" %>
 
-    </div>
+    <section id="main" role="main">
+      <%= yield %>
+    </section>
+    
+    <div id="bokehs"></div>
+    
+    <div class="clearfix"></div>
     
     <%= partial "footer" %>
       

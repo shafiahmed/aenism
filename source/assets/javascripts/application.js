@@ -36,7 +36,7 @@ function isCollide(a, b, clear) {
 			$bokeh = $(this);
   		$bokeh.css({
 				'left': randFromTo(0 - $bokeh.width()/2, $bokehs.width() - $bokeh.width()/2) - settings.startOffsetX,
-				'top': randFromTo(0 - $bokeh.height()/2, $bokehs.height() - $bokeh.height())
+				'top': randFromTo(0 - $bokeh.height()/2, $bokehs.height() - $bokeh.height()/2)
 			});
 			$bokeh.siblings().not('.bokeh').each(function() {
 				$sibling = $(this);

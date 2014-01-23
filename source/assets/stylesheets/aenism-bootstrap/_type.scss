@@ -9,12 +9,12 @@ h1, h2, h3, h4, h5, h6,
 }
 
 
-h1 {
+h1,
+h2 {
   margin: 0 0 $line-height-computed * .75;
 }
 
 // Not too tight
-h2,
 h3,
 h4,
 h5,
@@ -50,12 +50,23 @@ strong, b {
 // Blockquotes
 blockquote {
   border: 0;
-  margin: $line-height-computed/2;
-  text-align: center;
+  margin: $line-height-computed $line-height-computed/2;
+  padding: 0 $line-height-computed/2;
+  position: relative;
   p {
     font-size: ($font-size-base * 1.091);
     font-weight: $text-font-weight;
     line-height: 1.25;
+    &:before {
+      content: '';
+      border-left: 1px solid $hr-border;
+      border-top: 1px solid $hr-border;
+      height: $line-height-computed/2;
+      left: 0;
+      position: absolute;
+      top: 0;
+      width: $line-height-computed/4;
+    }
   }
   // Float right with text-align: right
   &.pull-right {

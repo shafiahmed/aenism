@@ -12,17 +12,15 @@
 
 // Core mixins
 @import "mixins";
-// 
-// // Core CSS
+ 
+// Core CSS
 @import "scaffolding";
 @import "type";
-@import "buttons";
-// 
-// // Components
-@import "navbar";
+
+// Components
 @import "pagination";
-// 
-// // Utility classes
+
+// Utility classes
 @import "utilities";
 
 
@@ -40,112 +38,49 @@ html {
   max-width: 768px;
 }
 
-// Custom Navbar
-.navbar-wrapper {
-  left: 0;
+
+// Brand
+// --------------------------------------------------
+
+#brand {
+  background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAK4AAAAgCAMAAAC8aLN0AAAAM1BMVEUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACjBUbJAAAAEXRSTlMAIL9gEEAwj3+fcK//799Qz5sCHCQAAAMcSURBVHgBnZjrkqwgDIQFAnIJjO//tGe3lNkOoSw4/WsdTfLZhIt7CBnrDi3yStTvBXvqgOB/pK9R5KK1NuWggksxcAVltBJXOpQKK9l+LzInlZt/ldU12JK4q0VZ0UBCBONDyTDzxF77iqvTe/5V1NddrjKoRgz+MFoGYH72Dtz2cTnu4bpZNkwYZ2BZ9Sj/yu3jstvBNZUHtaHzKmlzWTVvRJJ33CJj2G3gPn2bPt6lmxzH+WLtZJxxUWUIVriHEuCyW8etEECxDr6B3RKsHlIZB3oXl/0qrmHG6UlnIfWq7CY16BBq/Mj8D24Ni7h4peVY2ytGXc/XtIULvBu45XjP99FgUZt7y+zgAu9a70680tPaarCkp3PBzJu43GgJ97pfLh8zVTkXcNStYqr3q1TaxM13lYtWcD+9/MRgYoSD6kgAKZ1MDQH2T27E9QF533EBoDnS+3eXUb8Euc0x0zMaTeOirMLtll20gEsXnBdIL6ZX663aixecfrgY4q66g9tbrCzgIi+3GwJdK+7P3nD72mSG9H2A0N4N3M6bXnAhDM4N51gq3kOcvmD28Viaa4Hcb+LCWWAF9zCpztb5Z2hjn/Dm6YITPcSiAh1x45+CxkXeF1wQ5cbjBhCebFSfn9ODmWFpwAYAezcWMi8+O8oSLh7TjVjjOkOl75HWYxmcXv1W2sWFKbSGCwEnZqvfIc7QFEDYeCKzjQu8i7gHNdF6pV/cf7X6DYS3cjxT+g/cw9QNXKiNx4NT7RedwSpzQbSD2xXqHq4XuPCgRdt6M8MerhT3cYH3BdfVPLjb8EEvhzxAHYIjAaj2Ft/FhTqvn5bWi94tGGrEhLK4Zni1EKilYvo+UeMi78Kn5eXMQa6Jw/iJvmS4Bf9aKaIgnuPa2oe7is6vuGGWDQpd42YAbZ30JgYOuG1ciNa4uNihqsGzeRGpnfimsBJsOKFdm7jA+9IMVFjoCmJMIzLUcXnSH55wN+ziQvjLQuYBGE68fnAuYVC8cXP8kVG4FH+U70whKnn5nA6/4DB91yAxei7ZxnyVTBA0PGdqNQPQPzDDayHFJocOAAAAAElFTkSuQmCC');
+  background-size: 87px 16px;
+  display: block;
+  height: 16px;
+  @include hide-text();
+  left: 32px;
   position: absolute;
-  right: 0;
-  top: 0;
-  z-index: 20;
-}
-
-// Flip around the padding for proper display in narrow viewports
-.navbar-wrapper .container {
-  padding-left: 0;
-  padding-right: 0;
-}
-.navbar-wrapper .navbar {
-  padding-left: 15px;
-  padding-right: 15px;
+  top: 32px;
+  width: 87px;
 }
 
 
-// For sticky footer
-#wrapper {
-  margin: 0 auto -200px;
-  min-height: 100%;
-  padding: 0 0 200px;
-}
-
-@media (max-width: $screen-xs-max) {
-  #wrapper {
-    margin: 0 auto -257px;
-    padding: 0 0 257px;
-  }
-}
+// Footer
+// --------------------------------------------------
 
 #footer {
-  font-size: 18px;
-  padding-bottom: 48px;
-  text-align: center;
-}
-
-
-// Webfonts FOUT
-// --------------------------------------------------
-
-//article.post,
-//.navbar-brand {
-//  visibility: hidden;
-//}
-//
-//.wf-active {
-//  article.post,
-//  .navbar-brand {
-//    visibility: visible;
-//  }
-//}
-
-
-// Sections
-// --------------------------------------------------
-
-section[role="main"] {
-  > header [class^="col-"] {
-    margin-bottom: floor($grid-gutter-width / 2);
-  }
-  .article &,
-  .README & {
-    margin-top: 96px;
-  }
+  font-size: $font-size-extra-small;
+  line-height: $line-height-extra-small;
+  padding: 24px 32px;
+  position: relative;
 }
 
 
 // Bokeh
 // --------------------------------------------------
 
-// Clear the jumbotron from the navbar
-.jumbotron {
-  height: 432px;
-  margin-bottom: $line-height-computed;
-  padding: 0;
-  position: relative;
-  figure {
-    bottom: 0;
-    height: 260px;
-    left: 50%;
-    margin: 0 0 0 -110px;
-    position: absolute;
-    width: 240px;
-  }
-}
-
-@media (max-width: $screen-xs-max) {
-  .jumbotron {
-    height: 368px;
-    margin: 0;
-  }
-}
-
 #bokehs {
-  height: 432px;
+  border-bottom: 1px solid $hr-border;
+  height: $bokeh-height;
   overflow: hidden;
-  position: relative;
+  position: absolute;
+  top: 0;
+  width: 100%;
 }
 
 @media (max-width: $screen-xs-max) {
   #bokehs {
-    height: 368px;
+    height: $bokeh-xs-height;
   }
 }
 
@@ -159,22 +94,73 @@ section[role="main"] {
 }
 
 
-#me + hr {
-  margin: $line-height-computed * 2 0 $line-height-computed * 2;
-}
-
 // Articles
 // --------------------------------------------------
 
-article.post {
-  margin-bottom: $line-height-computed;
-  h2, h3, h4, h5, h6 {
-    a {
-      color: $brand-logotype;
-    }
-  }
-  & + hr {
-    margin: $line-height-computed * 3 0 $line-height-computed * 2;
+[role="main"] {
+  margin-top: $bokeh-height;
+}
+
+@media (max-width: $screen-xs-max) {
+  [role="main"] {
+    margin-top: $bokeh-xs-height;
   }
 }
+
+#articles {
+  article {
+    background-size: cover;
+    border-bottom: 1px solid $hr-border;
+    border-right: 1px solid $hr-border;
+    float: left;
+    height: 320px;
+    padding: 24px 48px 24px 32px;
+    position: relative;
+    width: percentage(1/4);
+    h2, h3, h4, h5, h6 {
+      font-size: $font-size-small;
+      line-height: $line-height-small;
+      a {
+        color: $brand-logotype;
+      }
+    }
+    footer {
+      bottom: 0;
+      left: 0;
+      margin: 0 48px 24px 32px;
+      position: absolute;
+      p {
+        font-size: $font-size-extra-small;
+        line-height: $line-height-extra-small;
+      }
+    }
+  }
+  // Vertical lines
+  article:nth-child(4n) {
+    border-right: 0;
+  }
+  @media (max-width: $screen-md-max) {
+    article {
+      width: percentage(1/3);
+      &:nth-child(3n) {
+        border-right: 0;
+      }
+    }
+  }
+  @media (max-width: $screen-sm-max) {
+    article {
+      width: percentage(1/2);
+      &:nth-child(2n) {
+        border-right: 0;
+      }
+    }
+  }
+  @media (max-width: $screen-xs-max) {
+    article {
+      width: 100%;
+      border-right: 0;
+    }
+  }
+}
+
 

@@ -1,6 +1,7 @@
 ---
 title: The Making of the Beginning
 date: 2014-01-21 17:07 UTC
+description: It’s still January, not too late to add having a new blog to my resolutions.
 tags: aenism
 ---
 

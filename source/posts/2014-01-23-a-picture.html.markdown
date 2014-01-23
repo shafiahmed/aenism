@@ -1,0 +1,7 @@
+---
+title: A Picture
+date: 2014-01-23 05:42 UTC
+tags: images
+image: http://farm3.staticflickr.com/2835/11903310816_c2f005d029_b.jpg
+---
+
