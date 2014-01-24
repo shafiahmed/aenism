@@ -52,6 +52,7 @@ html {
   position: absolute;
   top: 32px;
   width: 87px;
+  z-index: $zindex-navbar;
 }
 
 
@@ -59,10 +60,66 @@ html {
 // --------------------------------------------------
 
 #footer {
-  font-size: $font-size-extra-small;
-  line-height: $line-height-extra-small;
-  padding: 24px 32px;
+  border-top: 1px solid $hr-border;
+  margin-top: -1px;
   position: relative;
+  div {
+    float: left;
+    font-size: $font-size-extra-small;
+    line-height: $line-height-extra-small;
+    padding: 24px 32px 23px;
+    text-align: center;
+  }
+  #social {
+    border-bottom: 1px solid $hr-border;
+    width: 100%;
+  }
+  #copyright {
+    width: 100%;
+  }
+  @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+    #social {
+      border-bottom: 0;
+      text-align: left;
+      width: 50%;
+    }
+    #copyright {
+      text-align: right;
+      width: 50%;
+    }
+  }
+  @media (min-width: $screen-md-min) and (max-width: $screen-md-max) {
+    #social {
+      border-bottom: 0;
+      text-align: left;
+      width: 33.33333333%;
+    }
+    #copyright {
+      text-align: right;
+      width: 66.66666666%;
+    }
+  }
+  @media (min-width: $screen-lg-min) {
+    #social {
+      border-bottom: 0;
+      text-align: left;
+      width: 50%;
+    }
+    #copyright {
+      text-align: right;
+      width: 50%;
+    }
+  }
+}
+
+
+// Sticky footer
+// --------------------------------------------------
+
+.wrapper {
+  margin: 0 auto -72px;
+  min-height: 100%;
+  padding: 0 0 72px;
 }
 
 
@@ -77,10 +134,19 @@ html {
   top: 0;
   width: 100%;
 }
-
-@media (max-width: $screen-xs-max) {
+@media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
   #bokehs {
-    height: $bokeh-xs-height;
+    height: $bokeh-sm-height;
+  }
+}
+@media (min-width: $screen-md-min) and (max-width: $screen-md-max) {
+  #bokehs {
+    height: $bokeh-md-height;
+  }
+}
+@media (min-width: $screen-lg-min) {
+  #bokehs {
+    height: $bokeh-lg-height;
   }
 }
 
@@ -89,7 +155,7 @@ html {
 	z-index: 0;
 }
 
-#bokeh-box > .bokeh {
+#bokeh-box {
 	display: none;
 }
 
@@ -98,23 +164,33 @@ html {
 // --------------------------------------------------
 
 [role="main"] {
-  margin-top: $bokeh-height;
+  padding-top: $bokeh-height;
 }
-
-@media (max-width: $screen-xs-max) {
+@media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
   [role="main"] {
-    margin-top: $bokeh-xs-height;
+    padding-top: $bokeh-sm-height;
+  }
+}
+@media (min-width: $screen-md-min) and (max-width: $screen-md-max) {
+  [role="main"] {
+    padding-top: $bokeh-md-height;
+  }
+}
+@media (min-width: $screen-lg-min) {
+  [role="main"] {
+    padding-top: $bokeh-lg-height;
   }
 }
 
 #articles {
+  @include clearfix();
   article {
     background-size: cover;
     border-bottom: 1px solid $hr-border;
     border-right: 1px solid $hr-border;
     float: left;
-    height: 320px;
-    padding: 24px 48px 24px 32px;
+    height: 272px;
+    padding: 24px 48px 28px 32px;
     position: relative;
     width: percentage(1/4);
     h2, h3, h4, h5, h6 {
@@ -127,40 +203,70 @@ html {
     footer {
       bottom: 0;
       left: 0;
-      margin: 0 48px 24px 32px;
+      margin: 0 48px 28px 32px;
       position: absolute;
       p {
         font-size: $font-size-extra-small;
         line-height: $line-height-extra-small;
+        margin: 0;
       }
-    }
-  }
-  // Vertical lines
-  article:nth-child(4n) {
-    border-right: 0;
-  }
-  @media (max-width: $screen-md-max) {
-    article {
-      width: percentage(1/3);
-      &:nth-child(3n) {
-        border-right: 0;
-      }
-    }
-  }
-  @media (max-width: $screen-sm-max) {
-    article {
-      width: percentage(1/2);
-      &:nth-child(2n) {
-        border-right: 0;
-      }
-    }
-  }
-  @media (max-width: $screen-xs-max) {
-    article {
-      width: 100%;
-      border-right: 0;
     }
   }
 }
 
+// Vertical lines
+#articles article {
+  width: 100%;
+  border-right: 1px solid $hr-border;
+}
+@media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+  #articles article {
+    width: percentage(1/2);
+  }
+  #articles article:nth-child(2n) {
+    border-right: 0;
+  }
+}
+@media (min-width: $screen-md-min) and (max-width: $screen-md-max) {
+  #articles article {
+    width: percentage(1/3);
+  }
+  #articles article:nth-child(3n) {
+    border-right: 0;
+  }
+}
+@media (min-width: $screen-lg-min) {
+  #articles article {
+    width: percentage(1/4);
+  }
+  #articles article:nth-child(4n) {
+    border-right: 0;
+  }
+}
+
+
+// Article
+// --------------------------------------------------
+
+#masthead {
+  height: $bokeh-height;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+@media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+  #masthead {
+    height: $bokeh-sm-height;
+  }
+}
+@media (min-width: $screen-md-min) and (max-width: $screen-md-max) {
+  #masthead {
+    height: $bokeh-md-height;
+  }
+}
+@media (min-width: $screen-lg-min) {
+  #masthead {
+    height: $bokeh-lg-height;
+  }
+}
 
