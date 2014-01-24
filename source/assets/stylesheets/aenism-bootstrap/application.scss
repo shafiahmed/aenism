@@ -61,7 +61,7 @@ html {
 
 #footer {
   border-top: 1px solid $hr-border;
-  margin-top: -1px;
+  @include clearfix();
   position: relative;
   div {
     float: left;
@@ -117,7 +117,7 @@ html {
 // --------------------------------------------------
 
 .wrapper {
-  margin: 0 auto -72px;
+  margin: 0 auto -73px; // +1 for border
   min-height: 100%;
   padding: 0 0 72px;
 }
@@ -267,6 +267,12 @@ html {
 @media (min-width: $screen-lg-min) {
   #masthead {
     height: $bokeh-lg-height;
+  }
+}
+
+.article {
+  article {
+    padding-bottom: 96px;
   }
 }
 
