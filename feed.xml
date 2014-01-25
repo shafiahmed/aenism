@@ -5,34 +5,56 @@
   <id>http://blog.url.com/</id>
   <link href="http://blog.url.com/"/>
   <link href="http://blog.url.com/feed.xml" rel="self"/>
-  <updated>2014-01-21T12:57:00Z</updated>
+  <updated>2014-01-23T05:42:00Z</updated>
   <author>
     <name>Blog Author</name>
   </author>
   <entry>
-    <title>Test Post</title>
-    <link rel="alternate" href="http://blog.url.com/test/test-post-2/"/>
-    <id>http://blog.url.com/test/test-post-2/</id>
-    <published>2014-01-21T12:57:00Z</published>
-    <updated>2014-01-21T20:58:19+08:00</updated>
+    <title>A Picture</title>
+    <link rel="alternate" href="http://blog.url.com/a-picture/"/>
+    <id>http://blog.url.com/a-picture/</id>
+    <published>2014-01-23T05:42:00Z</published>
+    <updated>2014-01-23T13:59:48+08:00</updated>
     <author>
       <name>Article Author</name>
     </author>
-    <content type="html">&lt;p&gt;Woohoo!&lt;/p&gt;
+    <content type="html">
 </content>
   </entry>
   <entry>
-    <title>Hello World</title>
-    <link rel="alternate" href="http://blog.url.com/general/hello-world/"/>
-    <id>http://blog.url.com/general/hello-world/</id>
-    <published>2014-01-21T03:59:00Z</published>
-    <updated>2014-01-21T14:45:16+08:00</updated>
+    <title>The Creation Formula</title>
+    <link rel="alternate" href="http://blog.url.com/the-creation-formula/"/>
+    <id>http://blog.url.com/the-creation-formula/</id>
+    <published>2014-01-22T02:18:00Z</published>
+    <updated>2014-01-23T12:03:43+08:00</updated>
     <author>
       <name>Article Author</name>
     </author>
-    <content type="html">&lt;p&gt;It’s still January, not too late to add having a new blog to my resolutions. My last good blog &lt;em&gt;aentan.com&lt;/em&gt; lasted two point five years and was decently successful. I had a couple of &lt;a href="https://www.hnsearch.com/search#request/all&amp;amp;amp;q=aentan.com&amp;amp;amp;sortby=points+desc"&gt;Hacker News front page articles&lt;/a&gt;, a repost on &lt;a href="http://lifehacker.com/5899592/overthinking-and-your-child+like-mind"&gt;Lifehacker&lt;/a&gt; and various job opportunities. Problem was… maintaining a WordPress site in a shared hosting environment became too much of a chore and I let it slip. Dreamhost was a hundred bucks a year. Didn’t make sense anymore.&lt;/p&gt;
+    <content type="html">&lt;p&gt;What are the necessary things one need to collect before achieving creativity? We agree creativity is some kind of innate talent some have more than others. We also agree we can become more creative with the right thinking skills. Agree we have not a simple root framework as a backbone of the creative process.&lt;/p&gt;
 
-&lt;p&gt;I tried to develop my own blog engine &lt;a href="http://writeonpure.com"&gt;&lt;em&gt;Pure&lt;/em&gt;&lt;/a&gt; and wrote a couple of articles on it. It was an ambitious project in which articles are visually composed like Keynote or Powerpoint slides. It’s a Javascript monster. I spent a year developing it with my free time but it didn’t stick with me. I have to use a browser to write and I couldn’t do it offline. Still feels like a lot of work.&lt;/p&gt;
+&lt;p&gt;I’ve been thinking about how we create. If there was a formula for the creative process, what would its parameters be? What should we seek and combine in order to create creativity? Here’s a simple equation I’ve come up with. &lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;x = Craft × Consideration × Consciousness&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Whether it’s inventing a useful new contraption, developing a clever advertising campaign, writing a bestselling novel or making a blockbuster film, this is the pattern most if not every creative endeavor have in common.&lt;/p&gt;
+
+&lt;p&gt;Let’s assume X as the factor that makes something great. The more X in something have the greater it is. X isn’t necessarily mass, in case I’ve push you into a less-is-more defense. It’s the abstract construct on the side of of an equation which other side deals with the more identifiable qualities. &lt;/p&gt;
+</content>
+  </entry>
+  <entry>
+    <title>The Making of the Beginning</title>
+    <link rel="alternate" href="http://blog.url.com/the-making-of-the-beginning/"/>
+    <id>http://blog.url.com/the-making-of-the-beginning/</id>
+    <published>2014-01-21T17:07:00Z</published>
+    <updated>2014-01-23T12:12:24+08:00</updated>
+    <author>
+      <name>Article Author</name>
+    </author>
+    <content type="html">&lt;p&gt;It’s still January, not too late to add having a new blog to my resolutions. My last decently successful blog &lt;em&gt;aentan.com&lt;/em&gt; lasted just under three years. I made it to the Hacker News front page &lt;a href="https://www.hnsearch.com/search#request/all&amp;amp;amp;q=aentan.com&amp;amp;amp;sortby=points+desc"&gt;a couple of times&lt;/a&gt;, reposted an article to &lt;a href="http://lifehacker.com/5899592/overthinking-and-your-child+like-mind"&gt;Lifehacker&lt;/a&gt; and landed various job opportunities. Problem was… maintaining a WordPress site in a shared hosting environment is annoying. Dreamhost was a hundred bucks a year. Didn’t make sense anymore.&lt;/p&gt;
+
+&lt;p&gt;I tried to develop my own blog engine &lt;a href="http://writeonpure.com"&gt;&lt;em&gt;Pure&lt;/em&gt;&lt;/a&gt; and wrote a couple of articles on it. It was an ambitious project in which articles are visually composed like Keynote or Powerpoint slides. It’s a Javascript monster. I spent a year developing it with my free time but it didn’t stick with me. I had to rely on a browser to write and I couldn’t easily write offline. Still feels like a lot of work.&lt;/p&gt;
 
 &lt;p&gt;So here I am with a new setup. It’s much better and it’s free.&lt;/p&gt;
 
@@ -52,7 +74,7 @@
 
 &lt;p&gt;Though I didn’t continue using Pure I liked its simple content-centric design. Blogs are not marketing websites. The content should take center stage. Typography and whitespace are the chief elements of a good blog design. &lt;a href="https://medium.com"&gt;&lt;em&gt;Medium&lt;/em&gt;&lt;/a&gt; and &lt;a href="http://alistapart.com"&gt;&lt;em&gt;ALA&lt;/em&gt;&lt;/a&gt; embody this functional aesthetic well.&lt;/p&gt;
 
-&lt;p&gt;The typefaces used are &lt;em&gt;Brandon Grotesque&lt;/em&gt; for headings and &lt;em&gt;Chaparral Pro&lt;/em&gt; for body text, from &lt;a href="https://typekit.com"&gt;Typekit&lt;/a&gt;. I find Brandon a softer, more down-to-earth Futura and Chaparral has a smart character.&lt;/p&gt;
+&lt;p&gt;The typefaces used are &lt;em&gt;Brandon Grotesque&lt;/em&gt; for headings and &lt;em&gt;Freight Text Pro&lt;/em&gt; for body text, from &lt;a href="https://typekit.com"&gt;Typekit&lt;/a&gt;. I find Brandon a softer, more down-to-earth Futura and Freight is a nerdy serif.&lt;/p&gt;
 
 &lt;p&gt;The animated masthead at the top of the homepage represents my consciousness. It’s some of the things that have inspired me and defined me – books, films, music, favorite things, brands, possessions. They’d give you a good idea of the person I am. I created a script called &lt;em&gt;Bokeh&lt;/em&gt; and it uses GSAP for hardware-accelerated animation.&lt;/p&gt;
 </content>
