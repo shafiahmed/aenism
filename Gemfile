@@ -15,9 +15,8 @@ gem 'oj'
 # Minify HTML
 gem "middleman-minify-html"
 
-# Use Sass + Bootstrap
+# Use Sass
 gem 'sass'
-gem 'bootstrap-sass', :require => false
 
 # Syntx highlighting
 gem "middleman-syntax"

@@ -8,7 +8,7 @@
 @import "variables";
 
 // Then Bootstrap
-@import "bootstrap";
+@import "../bootstrap/bootstrap";
 
 // Core mixins
 @import "mixins";
@@ -16,9 +16,6 @@
 // Core CSS
 @import "scaffolding";
 @import "type";
-
-// Components
-@import "pagination";
 
 // Utility classes
 @import "utilities";
