@@ -21,13 +21,13 @@
           
           <% if is_blog_article? %>
           
-            <div class="container">
+            <div id="article" class="container">
               <article>
                 <h1><%= current_article.title %></h1>
                 <%= yield %>
               </article>
             </div>
-            <div id="masthead"></div>
+            <div id="cover"></div>
 
           <% else %>
 

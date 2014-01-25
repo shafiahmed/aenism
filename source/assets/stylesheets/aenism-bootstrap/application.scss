@@ -188,16 +188,22 @@ html {
     background-size: cover;
     border-bottom: 1px solid $hr-border;
     border-right: 1px solid $hr-border;
+    cursor: pointer;
     float: left;
     height: 272px;
     padding: 24px 48px 28px 32px;
     position: relative;
+    @include transition(background-color .48s ease-in-out);
     width: percentage(1/4);
+    &:hover {
+      background-color: $gray-lightissimo;
+    }
     h2, h3, h4, h5, h6 {
       font-size: $font-size-small;
       line-height: $line-height-small;
       a {
         color: $brand-logotype;
+        text-decoration: none;
       }
     }
     footer {
@@ -248,31 +254,32 @@ html {
 // Article
 // --------------------------------------------------
 
-#masthead {
+#cover {
+  background-color: #f65501;
   height: $bokeh-height;
   position: absolute;
   top: 0;
   width: 100%;
 }
 @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
-  #masthead {
+  #cover {
     height: $bokeh-sm-height;
   }
 }
 @media (min-width: $screen-md-min) and (max-width: $screen-md-max) {
-  #masthead {
+  #cover {
     height: $bokeh-md-height;
   }
 }
 @media (min-width: $screen-lg-min) {
-  #masthead {
+  #cover {
     height: $bokeh-lg-height;
   }
 }
 
-.article {
+#article {
   article {
-    padding-bottom: 96px;
+    padding: 48px 0 96px;
   }
 }
 

@@ -1,13 +1,19 @@
-//= require "bootstrap"
+//= require 'jquery.pjax'
 
-// Raindrops plugin
-
-// Utility Functions
+//
+// Utilities
+// ----------------------------------
 
 function randFromTo(min, max) {
 	return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
+
+//
+// Bokeh
+// ----------------------------------
+
+// Collision helper
 function isCollide(a, b, clear) {
 	var clear = clear ? clear : 0
 	var at = a.offset().top;
@@ -22,9 +28,7 @@ function isCollide(a, b, clear) {
   );
 }
 
-
-// Plugins
-
+// Plugin
 ;(function($) {
 
   $.fn.randomPositionWithoutCollision = function(options) {
@@ -56,9 +60,17 @@ function isCollide(a, b, clear) {
 }(jQuery));
 
 
+//
+// Application logic
+// ----------------------------------
+
 $(function() {
   
+  $d = $(document);
+  
+  //
   // Bokeh
+  // ----------------------------------
 
   var minAppearance = 480;
   var maxAppearance = 3200;
@@ -139,6 +151,31 @@ $(function() {
       }, randFromTo(minAppearance, maxAppearance));
     }());
   });
+  
+  
+  //
+  // Articles
+  // ----------------------------------
+  
+  function loadArticle(url) {
+    $.pjax({
+      url: url,
+      container: '#main',
+      fragment: '#main'
+    });
+  }
+  
+  if ($.support.pjax) {
+    // Clicking
+    $d.on('click', '#articles article', function(e) {
+      loadArticle($(this).find('a').attr('href'));
+    });
+    // PJAX
+    $d.on('click', '#articles article h2 a', function(e) {
+      e.preventDefault();
+      loadArticle($(this).attr('href'));
+    });
+  }
 
 });
 
