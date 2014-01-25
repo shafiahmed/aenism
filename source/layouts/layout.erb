@@ -20,26 +20,29 @@
         <section id="main" role="main">
           
           <% if is_blog_article? %>
-          
-            <div id="article" class="container">
-              <article>
-                <h1><%= current_article.title %></h1>
+
+            <article id="article">
+              <div id="cover" <%= "style=\"background-image:url('#{current_article.data.cover}');\" class=\"#{current_article.data.brandclass}\"" if current_article.data.cover %> >
+                <div class="container">
+                  <header>
+                    <h1><%= current_article.title %></h1>
+                    <p class="lead"><%= current_article.data.description %></p>
+                  </header>
+                </div>
+              </div>
+              <div class="container">
                 <%= yield %>
-              </article>
-            </div>
-            <div id="cover"></div>
+              </div>
+            </article>
 
           <% else %>
 
+            <div id="bokehs"></div>
             <%= yield %>
           
           <% end %>
       
         </section>
-        
-        <% unless is_blog_article? %>
-          <div id="bokehs"></div>
-        <% end %>
     
     </div>
     

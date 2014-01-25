@@ -97,25 +97,11 @@ $(function() {
       'opacity': 0
   	});
 
-    //     $bokeh.animate({
-    //       'opacity': 1
-    // }, {
-    //   duration: randomFade,
-    //       queue: false,
-    // });
     TweenLite.to($bokeh, randomFade/1000, {
       'opacity': 1,
       delay: randomFade/1000*0.5
     });
-    
-    //     $bokeh.delay(randomFade + randomStayAlive).animate({
-    //       'opacity': 0
-    //     }, {
-    //   duration: randomFade,
-    //       complete: function() {
-    //         $(this).remove();
-    //   }
-    // });
+
     TweenLite.to($bokeh, randomFade/1000, {
       opacity: 0,
       onComplete: function(){
@@ -124,12 +110,6 @@ $(function() {
       delay: (randomFade+randomStayAlive)/1000
     });
 
-    //     $bokeh.delay(randomStayAlive).animate({
-    //       'left': '+='+randomDist
-    // }, {
-    //   duration: randomFade * 2,
-    //       queue: false,
-    // });
     TweenLite.to($bokeh, (randomFade/1000) * 2, {
       left:   '+='+randomDist,
       delay:  randomStayAlive/1000
@@ -158,12 +138,39 @@ $(function() {
   // ----------------------------------
   
   function loadArticle(url) {
+    $main = $('#main');
+    $main.after($main.clone().attr('id', 'clone'));
     $.pjax({
       url: url,
       container: '#main',
       fragment: '#main'
     });
   }
+  
+  // Fadeout
+  $d.on('pjax:start', function(e) {
+    $('#main').hide();
+  });
+
+  // Brand color should match cover
+  $d.on('pjax:end', function(e) {
+    $('#main').fadeIn(function() {
+      $('#clone').remove();
+    });
+    if ($('#cover').hasClass('invert')) {
+      $('#brand').addClass('invert');
+    } else {
+      $('#brand').removeClass('invert');
+    }
+  });
+
+  // Back button event
+  $d.on('pjax:popstate', function() {
+    $('#main').hide();
+    $d.on('pjax:end', function(e) {
+      $('#bokehs').empty();
+    });
+  });
   
   if ($.support.pjax) {
     // Clicking

@@ -3,6 +3,8 @@ title: The Creation Formula
 date: 2014-01-22 02:18 UTC
 description: What are the necessary things one need to collect before achieving creativity?
 tags: creation
+cover: http://farm1.staticflickr.com/188/387510814_1e0fdce149_o.jpg
+brandclass: invert
 ---
 
 What are the necessary things one need to collect before achieving creativity? We agree creativity is some kind of innate talent some have more than others. We also agree we can become more creative with the right thinking skills. Agree we have not a simple root framework as a backbone of the creative process.
