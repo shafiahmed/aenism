@@ -3,11 +3,15 @@ title: Overthinking
 description: Your child-mind.
 date: 2014-01-26 00:53 UTC
 tags: creativity
+cover: http://farm6.staticflickr.com/5294/5488231536_9349319994_b.jpg
+covername: Stacy Benton
+coverlink: http://www.flickr.com/photos/srbstuff/5488231536/
+format: invert
 ---
+
+_First published in my old website and reposted on [Lifehacker](http://lifehacker.com/5899592/overthinking-and-your-child+like-mind)._
 
 ![Overthinking puzzle](http://farm8.staticflickr.com/7435/12143175453_c73cb4a1b7_z.jpg)
-
----
 
 Con­sider the ques­tion in the image above. I found this spread­ing on Face­book the other day and it took me a few min­utes to solve. Go on. Try. (If you want to know the answer. It's at the end of the arti­cle.)
 
@@ -18,6 +22,8 @@ Have you seen the Bollywood film 3 Idiots? It's the highest-grossing Bol­ly­wo
 ![pencil](http://farm8.staticflickr.com/7378/12143203883_3699707dbc_o.jpg)
 
 _*Let me clar­ify that I am aware this space pen story is an urban myth. I am only using it as a sto­ry­telling device and for some humor (at least for me and the audi­ence in the the­atre who laughed at the scene). It made me think about how we over­think which led to this post. Whether it is true or not is besides the point._
+
+---
 
 As the chil­dren we once were, grow­ing up was a process of becom­ing adults. Not only bio­log­i­cally but also men­tally. We learned to be respon­si­ble, to pay the bills, to get things done and we learned the com­plex world of adult­hood. To become adults we had to lose our tantrums, silli­ness, our child­hood. And we lost our minds. Our child-like minds.
 

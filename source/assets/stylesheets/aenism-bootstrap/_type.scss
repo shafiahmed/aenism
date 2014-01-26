@@ -30,7 +30,7 @@ p {
       margin-bottom: 0;
     }
     & + a img {
-      margin: 0;
+      margin: $line-height-computed 0;
     }
     &:last-child img {
       margin-bottom: $line-height-computed*1.5;

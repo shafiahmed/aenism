@@ -30,6 +30,7 @@
                     <p class="lead"><%= current_article.data.description %></p>
                   </header>
                 </div>
+                <%= link_to "#{current_article.data.covername}", current_article.data.coverlink, class: 'cover-credit', target: '_blank', rel: 'nofollow' %>
               </div>
               <div class="container">
                 <%= yield %>
