@@ -14,17 +14,58 @@
     <link rel="alternate" href="http://blog.url.com/child-mind/"/>
     <id>http://blog.url.com/child-mind/</id>
     <published>2014-01-26T06:02:00Z</published>
-    <updated>2014-01-26T14:08:01+08:00</updated>
+    <updated>2014-01-26T18:27:50+08:00</updated>
     <author>
       <name>Article Author</name>
     </author>
-    <content type="html">&lt;p&gt;&lt;em&gt;First published in my old website and reposted on &lt;a href="http://lifehacker.com/5899592/overthinking-and-your-child+like-mind"&gt;Lifehacker&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt;
+    <content type="html">&lt;p&gt;This problem can be solved by children in five to ten minutes, programmers in an hour and by people with higher education… well, see for yourself.&lt;/p&gt;
 
-&lt;p&gt;&lt;img alt="Overthinking puzzle" src="http://farm8.staticflickr.com/7435/12143175453_c73cb4a1b7_z.jpg" /&gt;&lt;/p&gt;
+&lt;table class="table table-bordered text-center"&gt;
+  &lt;tr&gt;
+    &lt;td&gt;8809 &amp;rarr; 6&lt;/td&gt;
+    &lt;td&gt;5555 &amp;rarr; 0 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;7111 &amp;rarr; 0&lt;/td&gt;
+    &lt;td&gt;8193 &amp;rarr; 3&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;2172 &amp;rarr; 0&lt;/td&gt;
+    &lt;td&gt;8096 &amp;rarr; 5&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;6666 &amp;rarr; 4&lt;/td&gt;
+    &lt;td&gt;1111 &amp;rarr; 0&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;3213 &amp;rarr; 0&lt;/td&gt;
+    &lt;td&gt;9999 &amp;rarr; 4&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;7662 &amp;rarr; 2&lt;/td&gt;
+    &lt;td&gt;7756 &amp;rarr; 1&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;9313 &amp;rarr; 1&lt;/td&gt;
+    &lt;td&gt;6855 &amp;rarr; 3&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;0000 &amp;rarr; 4&lt;/td&gt;
+    &lt;td&gt;9881 &amp;rarr; 5&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;2222 &amp;rarr; 0&lt;/td&gt;
+    &lt;td&gt;5531 &amp;rarr; 0&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;3333 &amp;rarr; 0&lt;/td&gt;
+    &lt;td&gt;&lt;strong&gt;2581 &amp;rarr; ?&lt;/strong&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;
 
 &lt;p&gt;Con­sider the ques­tion in the image above. I found this spread­ing on Face­book the other day and it took me a few min­utes to solve. Go on. Try. (If you want to know the answer. It’s at the end of the arti­cle.)&lt;/p&gt;
 
-&lt;p&gt;Have you seen the Bollywood film 3 Idiots? It’s the highest-grossing Bol­ly­wood film of all time in India about the adven­tures of three col­lege engi­neer­ing stu­dents. One of the scenes left an impression on me.&lt;/p&gt;
+&lt;p&gt;Have you seen the Bollywood film &lt;a href="http://en.wikipedia.org/wiki/3_Idiots"&gt;&lt;em&gt;3 Idiots&lt;/em&gt;&lt;/a&gt;? It’s the highest-grossing Bol­ly­wood film of all time in India about the adven­tures of three col­lege engi­neer­ing stu­dents. One of the scenes left an impression on me.&lt;/p&gt;
 
 &lt;p&gt;&lt;img alt="space pen" src="http://farm8.staticflickr.com/7305/12143613986_30f18aeeee_o.jpg" /&gt;
 &lt;img alt="space pen" src="http://farm6.staticflickr.com/5527/12142958075_fc1907eebc_o.jpg" /&gt;
@@ -55,6 +96,10 @@
 &lt;h3 id="answer-to-the-numbers-question"&gt;Answer to the numbers question&lt;/h3&gt;
 
 &lt;p&gt;The ques­tion has noth­ing to do with math­e­mat­ics. Look for the closed loops or shapes in each num­ber and count them. In 0, 6, 8 and 9. 8 has two of them. 2581 has two. The answer is 2.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;em&gt;First published in my old website and reposted on &lt;a href="http://lifehacker.com/5899592/overthinking-and-your-child+like-mind"&gt;Lifehacker&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt;
 </content>
   </entry>
   <entry>
