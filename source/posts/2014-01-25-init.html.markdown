@@ -3,6 +3,10 @@ title: Init
 date: 2014-01-25 15:45 UTC
 description: The making of.
 tags: aenism
+cover: http://farm8.staticflickr.com/7010/6444759791_5f8aa3e82a_b.jpg
+covername: Ross Pollack
+coverlink: http://www.flickr.com/photos/rossap/6444759791/
+format: invert
 ---
 
 It's still January, not too late to add having a new blog to my resolutions. My last decently successful blog *aentan.com* lasted just under three years. I made it to the Hacker News front page [a couple of times](https://www.hnsearch.com/search#request/all&q=aentan.com&sortby=points+desc), reposted an article to [Lifehacker](http://lifehacker.com/5899592/overthinking-and-your-child+like-mind) and landed various job opportunities. Problem was… maintaining a WordPress site in a shared hosting environment is annoying. Dreamhost was a hundred bucks a year. Didn't make sense anymore.

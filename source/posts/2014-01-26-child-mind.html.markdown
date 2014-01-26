@@ -1,7 +1,7 @@
 ---
-title: Overthinking
-description: Your child-mind.
-date: 2014-01-26 00:53 UTC
+title: Child mind
+description: Overcoming grown-up banality syndrome.
+date: 2014-01-26 06:02 UTC
 tags: creativity
 cover: http://farm6.staticflickr.com/5294/5488231536_9349319994_b.jpg
 covername: Stacy Benton
@@ -9,13 +9,54 @@ coverlink: http://www.flickr.com/photos/srbstuff/5488231536/
 format: invert
 ---
 
-_First published in my old website and reposted on [Lifehacker](http://lifehacker.com/5899592/overthinking-and-your-child+like-mind)._
+This problem can be solved by children in five to ten minutes, programmers in an hour and by people with higher education&hellip; well, see for yourself.
 
-![Overthinking puzzle](http://farm8.staticflickr.com/7435/12143175453_c73cb4a1b7_z.jpg)
+<table class="table table-bordered text-center">
+  <tr>
+    <td>8809 &rarr; 6</td>
+    <td>5555 &rarr; 0 </td>
+  </tr>
+  <tr>
+    <td>7111 &rarr; 0</td>
+    <td>8193 &rarr; 3</td>
+  </tr>
+  <tr>
+    <td>2172 &rarr; 0</td>
+    <td>8096 &rarr; 5</td>
+  </tr>
+  <tr>
+    <td>6666 &rarr; 4</td>
+    <td>1111 &rarr; 0</td>
+  </tr>
+  <tr>
+    <td>3213 &rarr; 0</td>
+    <td>9999 &rarr; 4</td>
+  </tr>
+  <tr>
+    <td>7662 &rarr; 2</td>
+    <td>7756 &rarr; 1</td>
+  </tr>
+  <tr>
+    <td>9313 &rarr; 1</td>
+    <td>6855 &rarr; 3</td>
+  </tr>
+  <tr>
+    <td>0000 &rarr; 4</td>
+    <td>9881 &rarr; 5</td>
+  </tr>
+  <tr>
+    <td>2222 &rarr; 0</td>
+    <td>5531 &rarr; 0</td>
+  </tr>
+  <tr>
+    <td>3333 &rarr; 0</td>
+    <td><strong>2581 &rarr; ?</strong></td>
+  </tr>
+</table>
 
 Con­sider the ques­tion in the image above. I found this spread­ing on Face­book the other day and it took me a few min­utes to solve. Go on. Try. (If you want to know the answer. It's at the end of the arti­cle.)
 
-Have you seen the Bollywood film 3 Idiots? It's the highest-grossing Bol­ly­wood film of all time in India about the adven­tures of three col­lege engi­neer­ing stu­dents. One of the scenes left an impression on me.
+Have you seen the Bollywood film [_3 Idiots_](http://en.wikipedia.org/wiki/3_Idiots)? It's the highest-grossing Bol­ly­wood film of all time in India about the adven­tures of three col­lege engi­neer­ing stu­dents. One of the scenes left an impression on me.
 
 ![space pen](http://farm8.staticflickr.com/7305/12143613986_30f18aeeee_o.jpg)
 ![space pen](http://farm6.staticflickr.com/5527/12142958075_fc1907eebc_o.jpg)
@@ -41,8 +82,12 @@ All you have to do is cir­cle a string around the pizza to cut a length equal t
 
 ![Solution](http://farm3.staticflickr.com/2890/12143753226_66a141e5eb_z.jpg)
 
-Con­jur­ing com­plex math­e­mat­i­cal equa­tions may make you look smart but to become truly cre­ative you need to be able to lib­er­ate your mind from the the shell of knowl­edge, edu­ca­tion and adul­ti­fi­ca­tion you have accu­mu­lated. Only then can you think like a child again.
+Con­jur­ing com­plex math­e­mat­i­cal equa­tions may make you look smart but to become truly cre­ative you need to be able to lib­er­ate your mind from the the burden of knowl­edge, edu­ca­tion and banality you have accu­mu­lated. Only then can you think like a child again.
 
 ###Answer to the numbers question
 
 The ques­tion has noth­ing to do with math­e­mat­ics. Look for the closed loops or shapes in each num­ber and count them. In 0, 6, 8 and 9. 8 has two of them. 2581 has two. The answer is 2.
+
+---
+
+_First published in my old website and reposted on [Lifehacker](http://lifehacker.com/5899592/overthinking-and-your-child+like-mind)._
