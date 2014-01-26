@@ -350,7 +350,7 @@ html {
       font-size: $font-size-extra-small;
       opacity: 0.64;
       position: absolute;
-      right: $line-height-computed/2;
+      right: $line-height-computed*.75;
     }
   }
   hr {
