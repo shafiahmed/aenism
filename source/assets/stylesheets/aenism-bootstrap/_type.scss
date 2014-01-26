@@ -25,6 +25,20 @@ h6 {
 p {
   margin: 0;
   -webkit-font-smoothing: antialiased;
+  a {
+    &:first-child img {
+      margin-bottom: 0;
+    }
+    & + a img {
+      margin: 0;
+    }
+    &:last-child img {
+      margin-bottom: $line-height-computed*1.5;
+    }
+    img {
+      margin: ($line-height-computed*1.5) 0;
+    }
+  }
 }
 p + p {
   text-indent: ($line-height-computed);

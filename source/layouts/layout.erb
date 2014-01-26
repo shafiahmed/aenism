@@ -6,9 +6,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><%= current_article.title + ' &ndash; ' unless current_article.nil? %><%= data.settings.name %></title>
     <%= feed_tag :atom, "#{blog.options.prefix.to_s}/feed.xml", title: "Atom Feed" %>
-    <%= stylesheet_link_tag "aenism-bootstrap/application", {:rel=>"stylesheet"} %>
+    <%= stylesheet_link_tag "application", {:rel=>"stylesheet"} %>
     <%= partial "webfonts" %>
   </head>
   <body class="<%= page_classes %><%= ' article' if is_blog_article? %>">
@@ -22,7 +23,7 @@
           <% if is_blog_article? %>
 
             <article id="article">
-              <div id="cover" <%= "style=\"background-image:url('#{current_article.data.cover}');\" class=\"#{current_article.data.brandclass}\"" if current_article.data.cover %> >
+              <div id="cover" <%= "style=\"background-image:url('#{current_article.data.cover}');\" data-cover=\"#{current_article.data.cover}\" class=\"#{current_article.data.format}\"" if current_article.data.cover %> >
                 <div class="container">
                   <header>
                     <h1><%= current_article.title %></h1>
@@ -34,6 +35,7 @@
                 <%= yield %>
               </div>
             </article>
+            <%= partial "comments" %>
 
           <% else %>
 

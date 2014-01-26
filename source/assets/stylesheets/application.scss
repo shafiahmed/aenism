@@ -1,24 +1,21 @@
-/*!
- * Aenism Bootstrap Theme v1 by @aen
- * Copyright 2013 Aenism
- * All Rights Reserved
- */
-
 // Custom variables first
-@import "variables";
+@import "aenism-bootstrap/variables";
 
 // Then Bootstrap
-@import "../bootstrap/bootstrap";
+@import "bootstrap/bootstrap";
 
 // Core mixins
-@import "mixins";
+@import "aenism-bootstrap/mixins";
  
 // Core CSS
-@import "scaffolding";
-@import "type";
+@import "aenism-bootstrap/scaffolding";
+@import "aenism-bootstrap/type";
 
 // Utility classes
-@import "utilities";
+@import "aenism-bootstrap/utilities";
+
+// Lightbox
+@import "jquery.magnific-popup";
 
 
 //
@@ -60,11 +57,12 @@ html {
 // --------------------------------------------------
 
 #footer {
+  background: $body-bg;
   border-top: 1px solid $hr-border;
   @include clearfix();
   position: relative;
   z-index: 2;
-  div {
+  > div {
     float: left;
     font-size: $font-size-extra-small;
     line-height: $line-height-extra-small;
@@ -120,6 +118,7 @@ html {
 .wrapper {
   margin: 0 auto -73px; // +1 for border
   min-height: 100%;
+  overflow: auto;
   padding: 0 0 72px;
 }
 
@@ -165,6 +164,7 @@ html {
 
 #main {
   background-color: white;
+  min-height: 100%;
   position: relative;
   z-index: 1;
 }
@@ -307,7 +307,7 @@ html {
 }
 
 #article {
-  padding: 0 0 96px;
+  padding: 0 0 80px;
   .container {
     height: 100%;
   }
@@ -321,7 +321,7 @@ html {
           bottom: 0;
           content: '';
           @include gradient-vertical(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.32));
-          height: 48%;
+          height: 100%;
           left: 0;
           position: absolute;
           width: 100%;
@@ -342,5 +342,35 @@ html {
       z-index: 1;
     }
   }
+  hr {
+    margin: $line-height-computed*1.5 auto;
+    width: $grid-gutter-width*.75;
+  }
 }
 
+// Images
+.mfp-with-zoom .mfp-container,
+.mfp-with-zoom.mfp-bg {
+  opacity: 0;
+  -webkit-backface-visibility: hidden;
+  /* ideally, transition speed should match zoom duration */
+  -webkit-transition: all 0.3s ease-out; 
+  -moz-transition: all 0.3s ease-out; 
+  -o-transition: all 0.3s ease-out; 
+  transition: all 0.3s ease-out;
+}
+.mfp-with-zoom.mfp-ready .mfp-container {
+    opacity: 1;
+}
+.mfp-with-zoom.mfp-ready.mfp-bg {
+    opacity: 0.8;
+}
+.mfp-with-zoom.mfp-removing .mfp-container, 
+.mfp-with-zoom.mfp-removing.mfp-bg {
+  opacity: 0;
+}
+
+// Comments
+#comments {
+  margin-bottom: 80px;
+}

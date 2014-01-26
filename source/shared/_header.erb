@@ -1,2 +1,2 @@
-<% brand_class = current_article.data.brandclass if is_blog_article? %>
-<%= link_to data.settings.name, '/', id: 'brand', class: brand_class %>
+<% format = current_article.data.format if is_blog_article? %>
+<%= link_to data.settings.name, '/', id: 'brand', class: format %>
