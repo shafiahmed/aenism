@@ -117,21 +117,28 @@ $(function() {
     });
 
   }
+
+  var bokeh1Timeout, bokeh2Timeout;
   
-  $(window).on('load', function() {
+  function initBokehs() {
+    $('#bokehs').empty();
+    clearTimeout(bokeh1Timeout);
+    clearTimeout(bokeh2Timeout);
     (function bokehs1() {
-      setTimeout(function() {
+      bokeh1Timeout = setTimeout(function() {
         randomBokeh();
         bokehs1();
       }, randFromTo(minAppearance, maxAppearance));
     }());
     (function bokehs2() {
-      setTimeout(function() {
+      bokeh2Timeout = setTimeout(function() {
         randomBokeh();
         bokehs2();
       }, randFromTo(minAppearance, maxAppearance));
     }());
-  });
+  }
+  
+  $(window).on('load', initBokehs);
   
   
   //
@@ -158,6 +165,7 @@ $(function() {
 
   // Brand color should match cover
   $d.on('pjax:end', function(e) {
+    initBokehs();
     TweenLite.to($main, 1, {
       opacity: 1,
       onComplete: function() {
@@ -202,30 +210,32 @@ $(function() {
 
 
   //
-  // Image lightbox
+  // Article images
   // ----------------------------------
   
-  $('#article p > img').addClass('img-responsive').wrap(function() {
-    return '<a class="img-zoom" href="' + $(this).attr('src') + '"></a>';
-  });
+  function processArticles() {
+    $('#article p > img').addClass('img-responsive').wrap(function() {
+      return '<a class="img-zoom" href="' + $(this).attr('src') + '"></a>';
+    });
   
-  $('.img-zoom').magnificPopup({
-    type: 'image',
-    mainClass: 'mfp-with-zoom', // this class is for CSS animation below
-      zoom: {
-        enabled: true, // By default it's false, so don't forget to enable it
-        duration: 300, // duration of the effect, in milliseconds
-        easing: 'ease-in-out', // CSS transition easing function 
-        // The "opener" function should return the element from which popup will be zoomed in
-        // and to which popup will be scaled down
-        // By defailt it looks for an image tag:
-        opener: function(openerElement) {
-          // openerElement is the element on which popup was initialized, in this case its <a> tag
-          // you don't need to add "opener" option if this code matches your needs, it's defailt one.
-          return openerElement.is('img') ? openerElement : openerElement.find('img');
+    $('.img-zoom').magnificPopup({
+      type: 'image',
+      mainClass: 'mfp-with-zoom', // this class is for CSS animation below
+        zoom: {
+          enabled: true, // By default it's false, so don't forget to enable it
+          duration: 300, // duration of the effect, in milliseconds
+          easing: 'ease-in-out', // CSS transition easing function 
+          // The "opener" function should return the element from which popup will be zoomed in
+          // and to which popup will be scaled down
+          // By defailt it looks for an image tag:
+          opener: function(openerElement) {
+            // openerElement is the element on which popup was initialized, in this case its <a> tag
+            // you don't need to add "opener" option if this code matches your needs, it's defailt one.
+            return openerElement.is('img') ? openerElement : openerElement.find('img');
+          }
         }
-      }
-  });
+    });
+  } processArticles();
 
 });
 
