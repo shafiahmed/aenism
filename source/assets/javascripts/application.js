@@ -138,8 +138,10 @@ $(function() {
   // Articles
   // ----------------------------------
   
-  function loadArticle(url) {
-    $main = $('#main');
+  var $main = $('#main');
+  var $body = $('body');
+  
+  function pjaxLoad(url) {
     $main.after($main.clone().attr('id', 'clone'));
     $.pjax({
       url: url,
@@ -150,29 +152,32 @@ $(function() {
   
   // Fadeout
   $d.on('pjax:start', function(e) {
-    $('#main').css('opacity', 0);
-    $('body').css('overflow', 'hidden');
+    $main.css('opacity', 0);
+    $body.css('overflow', 'hidden');
   });
 
   // Brand color should match cover
   $d.on('pjax:end', function(e) {
-    TweenLite.to($('#main'), 0.48, {
+    TweenLite.to($main, 1, {
       opacity: 1,
       onComplete: function() {
         $('#clone').remove();
-        $('body').css('overflow', 'auto');
+        $body.css('overflow', 'auto');
       }
     });
-    if ($('#cover').hasClass('invert')) {
+    if ($main.find('#bokehs').length < 1 && $('#cover').hasClass('invert')) {
+      // Loading inverted article
       $('#brand').addClass('invert');
     } else {
+      // Loading home or non-inverted article
       $('#brand').removeClass('invert');
     }
   });
 
   // Back button event
   $d.on('pjax:popstate', function() {
-    $('#main').css('opacity', 0);
+    $main.after($main.clone().attr('id', 'clone'));
+    $main.css('opacity', 0);
     $d.on('pjax:end', function(e) {
       $('#bokehs').empty();
     });
@@ -181,12 +186,17 @@ $(function() {
   if ($.support.pjax) {
     // Clicking
     $d.on('click', '#articles article', function(e) {
-      loadArticle($(this).find('a').attr('href'));
+      pjaxLoad($(this).find('a').attr('href'));
     });
     // PJAX
     $d.on('click', '#articles article h2 a', function(e) {
       e.preventDefault();
-      loadArticle($(this).attr('href'));
+      pjaxLoad($(this).attr('href'));
+    });
+    // Home button
+    $d.on('click', '#brand', function(e) {
+      e.preventDefault();
+      pjaxLoad($(this).attr('href'));
     });
   }
 
