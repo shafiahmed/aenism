@@ -150,13 +150,18 @@ $(function() {
   
   // Fadeout
   $d.on('pjax:start', function(e) {
-    $('#main').hide();
+    $('#main').css('opacity', 0);
+    $('body').css('overflow', 'hidden');
   });
 
   // Brand color should match cover
   $d.on('pjax:end', function(e) {
-    $('#main').fadeIn(function() {
-      $('#clone').remove();
+    TweenLite.to($('#main'), 0.48, {
+      opacity: 1,
+      onComplete: function() {
+        $('#clone').remove();
+        $('body').css('overflow', 'auto');
+      }
     });
     if ($('#cover').hasClass('invert')) {
       $('#brand').addClass('invert');
@@ -167,7 +172,7 @@ $(function() {
 
   // Back button event
   $d.on('pjax:popstate', function() {
-    $('#main').hide();
+    $('#main').css('opacity', 0);
     $d.on('pjax:end', function(e) {
       $('#bokehs').empty();
     });
