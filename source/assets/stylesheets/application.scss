@@ -170,14 +170,12 @@ html {
   background-color: white;
   min-height: 100%;
   position: relative;
-  z-index: 1;
 }
 
 #clone {
   position: absolute;
   top: 0;
   width: 100%;
-  z-index: 0;
 }
 
 
@@ -389,25 +387,37 @@ html {
     margin-right: auto;
   }
 }
-.mfp-with-zoom .mfp-container,
-.mfp-with-zoom.mfp-bg {
-  opacity: 0;
-  -webkit-backface-visibility: hidden;
-  /* ideally, transition speed should match zoom duration */
-  -webkit-transition: all 0.3s ease-out; 
-  -moz-transition: all 0.3s ease-out; 
-  -o-transition: all 0.3s ease-out; 
-  transition: all 0.3s ease-out;
+.fluidbox {
+        outline: none;
 }
-.mfp-with-zoom.mfp-ready .mfp-container {
-    opacity: 1;
+#fluidbox-overlay {
+  cursor: pointer;
+  cursor: -webkit-zoom-out;
+  cursor: -moz-zoom-out;
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 500;
 }
-.mfp-with-zoom.mfp-ready.mfp-bg {
-    opacity: $overlay-opacity;
+.fluidbox-wrap {
+  background-position: center center;
+  background-size: cover;
+  margin: 0 auto;
+  position: relative;
+  z-index: 400;
+  transition: all .25s ease-in-out;
 }
-.mfp-with-zoom.mfp-removing .mfp-container, 
-.mfp-with-zoom.mfp-removing.mfp-bg {
-  opacity: 0;
+.fluidbox-opened .fluidbox-wrap {
+  z-index: 600;
+}
+.fluidbox-ghost {
+  background-size: cover;
+  background-position: center center;
+  position: absolute;
+  transition: all .25s ease-in-out;
 }
 
 // Comments
