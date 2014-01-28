@@ -1,0 +1,11 @@
+.btn {
+  &:active,
+  &.active {
+    @include box-shadow(inset 0 1px 1px rgba(0,0,0,.08));
+  }
+}
+
+.btn-lg {
+  // line-height: ensure even-numbered height of button next to large input
+  @include button-size($padding-large-vertical, $padding-large-horizontal, $font-size-small, $line-height-large, $border-radius-large);
+}

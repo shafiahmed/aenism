@@ -138,9 +138,9 @@ $table-border-radius:                $border-radius-base;
 
 $btn-font-weight:                normal;
 
-$btn-default-color:              $gray-darker;
-$btn-default-bg:                 #f0f0f0;
-$btn-default-border:             #bbb;
+$btn-default-color:              $text-color;
+$btn-default-bg:                 #fff;
+$btn-default-border:             $gray-lightly;
 
 $btn-primary-color:              #fff;
 $btn-primary-bg:                 $brand-primary;
@@ -161,18 +161,6 @@ $btn-danger-border:              darken($btn-danger-bg, 0%);
 $btn-info-color:                 #fff;
 $btn-info-bg:                    $brand-info;
 $btn-info-border:                darken($btn-info-bg, 0%);
-
-$btn-facebook-color:             #fff;
-$btn-facebook-bg:                $brand-facebook;
-$btn-facebook-border:            darken($btn-facebook-bg, 0%);
-
-$btn-twitter-color:              #fff;
-$btn-twitter-bg:                 $brand-twitter;
-$btn-twitter-border:             darken($btn-twitter-bg, 0%);
-
-$btn-feature-color:              $gray-darker;
-$btn-feature-bg:                 #fff;
-$btn-feature-border:             #bbb;
 
 $btn-link-disabled-color:        $gray-light;
 
@@ -271,7 +259,7 @@ $screen-md-max:              ($screen-lg - 1);
 // Number of columns in the grid system
 $grid-columns:              12;
 // Padding, to be divided by two and applied to the left and right of all columns
-$grid-gutter-width:         64px;
+$grid-gutter-width:         32px;
 // Point at which the navbar stops collapsing
 $grid-float-breakpoint:     $screen-tablet;
 

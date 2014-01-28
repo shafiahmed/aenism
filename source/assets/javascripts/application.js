@@ -166,7 +166,8 @@ $(function() {
   // Brand color should match cover
   $d.on('pjax:end', function(e) {
     initBokehs();
-    TweenLite.to($main, 1, {
+    processArticles();
+    TweenLite.to($main, 0.8, {
       opacity: 1,
       onComplete: function() {
         $('#clone').remove();
@@ -236,6 +237,30 @@ $(function() {
         }
     });
   } processArticles();
+
+
+  //
+  // Show comments
+  // ----------------------------------
+
+  $d.on('click', '#show-comments', function(){
+    var $sc = $('#show-comments');
+    TweenLite.to($sc, 0.32, {
+      opacity: 0,
+      onComplete: function(){
+        $sc.remove();
+        var disqus_shortname = 'aenism';
+        // ajax request to load the disqus javascript
+        $.ajax({
+          type: "GET",
+          url: "http://" + disqus_shortname + ".disqus.com/embed.js",
+          dataType: "script",
+          cache: true
+        });
+      }
+    });
+    
+  });
 
 });
 

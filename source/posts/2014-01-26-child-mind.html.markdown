@@ -1,6 +1,6 @@
 ---
 title: Child mind
-description: Overcoming grown-up banality syndrome.
+description: Overcoming grown-up banality.
 date: 2014-01-26 06:02 UTC
 tags: creativity
 cover: http://farm6.staticflickr.com/5294/5488231536_9349319994_b.jpg
@@ -9,7 +9,9 @@ coverlink: http://www.flickr.com/photos/srbstuff/5488231536/
 format: invert
 ---
 
-This problem can be solved by children in five to ten minutes, programmers in an hour and by people with higher education&hellip; well, see for yourself.
+Con­sider this riddle I found spread­ing on Face­book some while ago.
+
+>_This problem can be solved by children in five to ten minutes, programmers in an hour and people with higher education…_
 
 <table class="table table-bordered text-center">
   <tr>
@@ -54,35 +56,33 @@ This problem can be solved by children in five to ten minutes, programmers in an
   </tr>
 </table>
 
-Con­sider the ques­tion in the image above. I found this spread­ing on Face­book the other day and it took me a few min­utes to solve. Go on. Try. (If you want to know the answer. It's at the end of the arti­cle.)
+I solved it pretty quickly. Why don't you try?
 
-Have you seen the Bollywood film [_3 Idiots_](http://en.wikipedia.org/wiki/3_Idiots)? It's the highest-grossing Bol­ly­wood film of all time in India about the adven­tures of three col­lege engi­neer­ing stu­dents. One of the scenes left an impression on me.
+---
+
+Have you seen the Bollywood film [_3 Idiots_](http://en.wikipedia.org/wiki/3_Idiots)? Here's the funny space pen scene from it.
 
 ![space pen](http://farm8.staticflickr.com/7305/12143613986_30f18aeeee_o.jpg)
 ![space pen](http://farm6.staticflickr.com/5527/12142958075_fc1907eebc_o.jpg)
 ![pencil](http://farm8.staticflickr.com/7378/12143203883_3699707dbc_o.jpg)
 
-_*Let me clar­ify that I am aware this space pen story is an urban myth. I am only using it as a sto­ry­telling device and for some humor (at least for me and the audi­ence in the the­atre who laughed at the scene). It made me think about how we over­think which led to this post. Whether it is true or not is besides the point._
-
 ---
 
-As the chil­dren we once were, grow­ing up was a process of becom­ing adults. Not only bio­log­i­cally but also men­tally. We learned to be respon­si­ble, to pay the bills, to get things done and we learned the com­plex world of adult­hood. To become adults we had to lose our tantrums, silli­ness, our child­hood. And we lost our minds. Our child-like minds.
+True story or not, this scene propones the folly of complex solutions to simple problems. How many times have we caught ourselves inventing space pens?
 
-The mind of a child is the great­est gift we will ever receive. As embryos in our moth­ers' womb, our heart, the first organ to develop only to power the next organ—the devel­op­ing brain which is soon mak­ing a quar­ter of a mil­lion new neu­rons every minute. In the first 10 years of life, our infant brain will have made bil­lions and bil­lions of con­nec­tions. It is a super­charged engine for learn­ing and cre­ativ­ity. Yet by adult­hood we have [lost most of this creativity](http://www.ted.com/talks/ken_robinson_says_schools_kill_creativity.html). We now think like adults. That is we think too much and our thoughts are too influ­enced by our knowl­edge. We need to get back our abil­ity to think like kids again. How?
+Chil­dren we once were, grow­ing up was largely about maturing psychologically into adults. Respon­si­bility, paying the bills, getting things done and various complexities we call adult­hood. To come of age was to lose our tantrums, silli­ness and innocence. Hence started the displacement of our childly minds.
 
-Where online would you find a lot of smart and knowl­edge­able peo­ple? Quora of course. I really like to visit Quora and learn from sub­ject mat­ter experts show­ing off their wits and exper­tise. Though some­times they over­think and com­pli­cate prob­lems with com­pli­cated answers. Many times peo­ple are just try­ing to show off how clever they are with rocket sci­ence. Like [this question](http://www.quora.com/What-is-the-easiest-way-to-cut-a-pizza-into-11-equal-slices) on Quora.
+The artless mind of a child is our great­est gift. As embryos in our moth­ers, our heart is the first organ to develop only to power the next – the seedling brain which will eventually make a quar­ter of a mil­lion new neu­rons every minute. By the age of ten, each of us would have made bil­lions and bil­lions of neural con­nec­tions. It is a super­charged engine for learn­ing and cre­ativ­ity. Yet by adult­hood we would have [displaced most of this creativity](http://www.ted.com/talks/ken_robinson_says_schools_kill_creativity.html). The adult mind thinks too much. Its thoughts too influ­enced by knowl­edge. We must regain the ability to think like kids again.
 
-![Quora question](http://farm4.staticflickr.com/3732/12143449744_d1886c2cfd_o.png)
+Quora is a knowledgeable community. Admist the clever answers one often finds over­thinking and com­pli­cation from people triyng to look smart. [How would you cut a pizza into 11 pieces?](http://www.quora.com/What-is-the-easiest-way-to-cut-a-pizza-into-11-equal-slices)
 
-The most pop­u­lar answer for the ques­tion before I answered involved cal­cu­la­tions with com­passes, con­cen­tric cir­cles, Pythagorean the­o­rem and square roots. I have no idea what a con­cen­tric cir­cle is, let alone cooks in a pizza kitchen. And who keeps com­passes in a kitchen? But since it's the most pop­u­lar answer I sup­pose over­think­ing is pop­u­lar in Quora.
+The pop­u­lar answers to the ques­tion involved cal­cu­la­tions with com­passes, con­cen­tric cir­cles, Pythagorean the­o­rem and square roots until someone suggested [a solution using strings](http://www.quora.com/What-is-the-easiest-way-to-cut-a-pizza-into-11-equal-slices/answer/Aen-Tan), something not hard to find in a kitchen. I had no idea what a con­cen­tric cir­cle is, let alone pizza cooks. And who keeps com­passes in a kitchen?
 
-I imag­ined myself with no math­e­mat­i­cal knowl­edge, a cook good with my hands, in a hot and humid kitchen faced with this prob­lem. What would I do? Turns out that the bet­ter solu­tion is much sim­pler and would only required a piece of string and a pen at the very least. Shouldn't be too hard to find in a kitchen. And so I offered [my answer](http://www.quora.com/What-is-the-easiest-way-to-cut-a-pizza-into-11-equal-slices/answer/Aen-Tan).
-
-All you have to do is cir­cle a string around the pizza to cut a length equal to the pizza cir­cum­fer­ence. Then fash­ion a divider of some sort or even use your thumb and index fin­ger. Adjust your thumb and fin­ger and wrap the string eleven times equally around them. This effec­tively divides the string into eleven equal parts. Use a pen and mark the string. Cir­cle the string around the pizza again and cut using the mark­ings as guides. My answer received more than a hun­dred votes, went on to become the most voted and the ques­tion was made a _Best Source_.
+The simple string solution involves first cir­cling then cutting a string around the pizza's cir­cum­fer­ence. The string is then wrapped eleven times around one's thumb and index finger until one gets eleven equal divisions by trial and error. The divisions are then marked. Cir­cle the string around the pizza again and cut from center to the markings. What simplicity! The answer soon became a rated as _best source_.
 
 ![Solution](http://farm3.staticflickr.com/2890/12143753226_66a141e5eb_z.jpg)
 
-Con­jur­ing com­plex math­e­mat­i­cal equa­tions may make you look smart but to become truly cre­ative you need to be able to lib­er­ate your mind from the the burden of knowl­edge, edu­ca­tion and banality you have accu­mu­lated. Only then can you think like a child again.
+Con­jur­ing math­e­mat­i­cal mumbo jumbo may make one look smart. To be truly cre­ative one needs to be able to lib­er­ate the mind from accumulated grown-up banality. Only then the child mind re-emerges.
 
 ###Answer to the numbers question
 
