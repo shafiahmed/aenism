@@ -25,6 +25,9 @@ h6 {
 p {
   margin: 0;
   -webkit-font-smoothing: antialiased;
+  &:last-of-type {
+    margin-bottom: ($line-height-computed/2);
+  }
   a {
     &:first-child img {
       margin-bottom: 0;
@@ -35,12 +38,25 @@ p {
     &:last-child img {
       margin-bottom: $line-height-computed*1.5;
     }
-    img {
-      margin: ($line-height-computed*1.5) 0;
-    }
   }
-  &:last-of-type {
-    margin-bottom: ($line-height-computed/2);
+  img {
+    margin: ($line-height-computed*.75) 0;
+  }
+}
+
+@media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+  p img {
+    margin: $line-height-computed auto;
+  }
+}
+@media (min-width: $screen-md-min) and (max-width: $screen-md-max) {
+  p img {
+    margin: $line-height-computed*1.5 auto;
+  }
+}
+@media (min-width: $screen-lg-min) {
+  p img {
+    margin: $line-height-computed*1.5 auto;
   }
 }
 
