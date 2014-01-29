@@ -14,11 +14,11 @@
     <link rel="alternate" href="http://blog.url.com/first-contribution-to-bootstrap/"/>
     <id>http://blog.url.com/first-contribution-to-bootstrap/</id>
     <published>2014-01-29T00:23:00Z</published>
-    <updated>2014-01-29T09:10:03+08:00</updated>
+    <updated>2014-01-29T09:32:50+08:00</updated>
     <author>
       <name>Article Author</name>
     </author>
-    <content type="html">&lt;p&gt;My &lt;a href="https://github.com/twbs/bootstrap/pull/11536"&gt;first pull request&lt;/a&gt; for Bootstrap has been merged into master. Just some additional CSS to add previously unsupported button dropdowns to justified button groups. Here’s a demo.&lt;/p&gt;
+    <content type="html">&lt;p&gt;&lt;a href="http://markdotto.com"&gt;Mark Otto&lt;/a&gt; merged my &lt;a href="https://github.com/twbs/bootstrap/pull/11536"&gt;first pull request&lt;/a&gt; into Bootstrap. Just some additional CSS to add previously unsupported button dropdowns to justified button groups. Here’s a demo.&lt;/p&gt;
 
 &lt;iframe width="100%" height="192" src="http://jsfiddle.net/5kFx6/3/embedded/result,html,css" allowfullscreen="allowfullscreen" frameborder="0"&gt;&lt;/iframe&gt;
 
