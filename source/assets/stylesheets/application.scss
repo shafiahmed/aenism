@@ -337,7 +337,7 @@ html {
         }
       }
       .cover-credit {
-        color: white;
+        color: rgba(255,255,255,.48);
       }
     }
     header {
@@ -349,9 +349,8 @@ html {
     }
     .cover-credit {
       bottom: $line-height-computed/2;
-      color: $gray-lightly;
+      color: rgba(0,0,0,.48);
       font-size: $font-size-extra-small;
-      opacity: 0.64;
       position: absolute;
       right: $line-height-computed*.75;
     }
