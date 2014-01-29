@@ -224,8 +224,8 @@ $(function() {
     });
   
     $('.img-zoom').fluidbox({
-      viewportFill: 0.96,
-      overlayColor: 'rgba(255,255,255,.8)'
+      viewportFill: 1,
+      overlayColor: 'rgba(255,255,255,.48)'
     });
   } processArticles();
 
